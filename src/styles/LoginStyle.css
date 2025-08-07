@@ -1,0 +1,85 @@
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; 
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -20px;
+}
+.box {
+  border-radius: 10px;
+  width: 30rem;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;           
+  gap: 1rem;
+  padding: 4rem;  
+  padding-top: 10%;             
+  box-sizing: border-box;
+}
+
+.b{
+    color: #1976d2;
+}
+.bt{
+    margin-top: 6px;
+}
+.si{
+    margin-top: 1%;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.icon {
+    color: #1976d2;  
+}
+.icon2{
+    margin-top: 1%;
+    color: #1976d2
+}
+.icon3{
+    color: #1976d2
+}
+
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 90%;
+}
+.user{
+    font-size: 11px;
+}
+
+.passfield{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 90%;
+}
+.userpass{
+    font-size: 11px;
+}
+
+.button-field{
+    margin-bottom: 8px;
+    width: 90%;
+    text-transform: capitalize;
+}
+
+
+
+
