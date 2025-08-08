@@ -19,18 +19,17 @@ const Login = () => {
                         <span className="b">P</span>riyan <span className="b">W</span>eb
                     </h1>
                     <div className="si">Sign in to your account</div>
-                    <div className="field">  
-                        {/* <label htmlFor="username" className="user">Email address</label> */}
+
+                    <div className="email">  
                         <CircleUserRound size={17} className="icon2"/>
-                        <TextField id="input-with-sx" label="Enter e-mail address" variant="outlined"/>
+                        <TextField label= "Enter e-mail address" variant="outlined" type="email" size="small" fullWidth/>
                     </div> 
                 
-                    <div className="passfield">
-                        {/* <label htmlFor="password-field" className="userpass">Password</label> */}
+                    <div className="pass">
                         <Lock size={16} className="icon3" />
-                        <TextField className="password-field" label= "Password" variant="outlined" type="password"/>
+                        <TextField label= "Password" variant="outlined" type="password" size="small" fullWidth/>
                     </div>
-                        <Button className="button-field" variant="contained" onClick={Submits} >Sign In</Button>
+                        <Button className="button-field" variant="contained" onClick={Submits} size="small">Sign In</Button>
                 </div>
             </div>     
         </div>
