@@ -16,7 +16,7 @@ const Login = () => {
         <div
             className="backgroundimage"
             style={{ backgroundImage: `url(${bgGif})` }}>
-                
+
             <div className="input-wrapper">
                 <div className="img"><img className="img" src={logo} alt="Logo" title="Priyan webX Logo" /></div>
                 <div className="border">
