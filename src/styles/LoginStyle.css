@@ -121,18 +121,36 @@
 /* MOBILE OPTIMIZATION */
 @media screen and (max-width: 600px) {
   .backgroundimage {
-    transform: scaleY(-1);
+    position: relative;
+    background-size: cover;
+    background-position: center;
   }
+
+  /* Flip only the background using pseudo-element */
+  .backgroundimage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    transform: scaleY(-1);
+    z-index: 0;
+  }
+
+  /* Keep actual content normal */
   .backgroundimage > * {
-    transform: scaleY(-1);
+    position: relative;
+    z-index: 1;
+    transform: none;
   }
-  .heading-text{
+
+  .heading-text {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 8px;
     line-height: 1.2;
     text-align: center;
   }
+
   .input-wrapper {
     flex-direction: column;       
     align-items: center;          
