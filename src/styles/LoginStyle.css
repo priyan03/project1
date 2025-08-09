@@ -2,40 +2,90 @@
     box-sizing: border-box;
 }
 .backgroundimage{
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    width: 100%;
 }
 .img{
-    width: 100%;
-    padding-left: 10%;
+    width: 90%;
+    padding-left: 6%;
 }
 .input-wrapper{
     min-height: 98vh;  
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    padding: 0;  
+    padding:0;
+    padding-bottom: 70px;
+    width: 100%;
+    gap: 10px;
+}
+.heading-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
     width: 100%;
 }
+
 .border{
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
+/* BOX */
 .box {
-  border-radius: 10px;
+  border-radius: 2px;
   width: clamp(350px, 70%, 350px);
-  background-color: rgb(231, 231, 231);
-  border: 1px solid rgb(231, 231, 231);
+  background: transparent;
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: clamp(1.5rem, 3vw, 2rem);             
+  z-index: 1;
 }
+
+/* Animated shining border */
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px; 
+  background: linear-gradient(
+    270deg,
+    rgba(0, 110, 255, 0.6),  /* light sky blue */
+    rgba(3, 192, 151, 0.6),    /* medium blue */
+    rgba(135, 206, 250, 0.6),  /* light sky blue */
+    rgba(245, 118, 217, 0.6)      /* deep navy blue */
+  );
+  background-size: 400% 400%;
+  animation: shine-border 5s linear infinite;
+  z-index: -1;
+}
+
+/* Transparent center overlay to cover gradient inside */
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 2px; 
+  border-radius: 8px;
+  z-index: -1;
+}
+
+@keyframes shine-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* BOX */
 
 .bt{
     margin-top: 6px;
