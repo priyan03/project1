@@ -126,6 +126,17 @@
   .backgroundimage > * {
     transform: scaleY(-1);
   }
+  .heading-text{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+  }
   .input-wrapper {
     flex-direction: column;       
     align-items: center;          
