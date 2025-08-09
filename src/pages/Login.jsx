@@ -27,7 +27,7 @@ const Login = () => {
                     width: "100%",
                     padding: "10px"
                 }
-                }><span className="shine">Innovation starts with a click </span><span>&nbsp;-&nbsp;</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{fontSize: "3rem", color:"GrayText"}}>X</span></div>
+                }><span className="shine">Innovation starts with a click </span><span>-</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{fontSize: "3rem", color:"GrayText"}}>X</span></div>
                 <marquee style={{fontWeight:"bold", color:"hsla(273, 100%, 51%, 0.80)",WebkitTextStroke: "0.4px black", textStroke: "1px black"}}>Priyan webX is a digital solutions service where a single user interaction
                      — a click — initiates innovative processes. From web application development to 
                      interactive user experiences, our service transforms simple actions into powerful outcomes, 
