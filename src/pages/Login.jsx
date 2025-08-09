@@ -16,6 +16,19 @@ const Login = () => {
         <div
             className="backgroundimage"
             style={{ backgroundImage: `url(${bgGif})` }}>
+            <div className="heading-text" style={
+                {
+                    fontSize: "2rem",
+                    fontWeight: "bold",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                    width: "100%",
+                    padding: "10px"
+                }
+                }>Innovation starts with a click - Priyan webX</div>
+                <marquee>Priyan webX is a digital solutions service where a single user interaction — a click — initiates innovative processes. From web application development to interactive user experiences, our service transforms simple actions into powerful outcomes, integrating modern UI/UX design, responsive technology, and scalable architecture to deliver cutting-edge solutions.</marquee>
 
             <div className="input-wrapper">
                 <div className="img"><img className="img" src={logo} alt="Logo" title="Priyan webX Logo" /></div>
