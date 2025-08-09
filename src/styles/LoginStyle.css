@@ -2,27 +2,17 @@
     box-sizing: border-box;
 }
 .backgroundimage{
-    position: relative;
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-.video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .img{
     width: 100%;
     padding-left: 10%;
 }
 .input-wrapper{
-    position: relative;
-    z-index: 1;
     min-height: 98vh;  
     display: flex;
     justify-content: center;
@@ -72,7 +62,6 @@
 }
 .a1{
     margin-left: 39.4%;
-    color:"#1976d2";
 }
 .span{
     margin-left: -10%;
@@ -82,14 +71,32 @@
 /* MOBILE OPTIMIZATION */
 @media screen and (max-width: 600px) {
   .box {
-    padding: 1.2rem;
+    width: 90%;
+    padding: 1rem; 
     gap: 0.75rem;
   }
+
+  .img {
+    padding-left: 0; 
+    text-align: center;
+  }
+
   .si {
     font-size: 0.9rem;
+    text-align: center;
   }
-  .user,
-  .userpass {
-    font-size: 10px;
+
+  .a1 {
+    margin-left: 0; 
+    display: block;
+    text-align: right;
+  }
+
+  .span {
+    margin-left: 0; 
+  }
+
+  .email, .pass {
+    width: 100%;
   }
 }
