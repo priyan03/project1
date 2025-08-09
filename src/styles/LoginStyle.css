@@ -24,10 +24,33 @@
     gap: 10px;
 }
 .heading-text {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.shine{
+    background: linear-gradient(
+    90deg,
+    #000000,
+    #000000,
+    #ffffff,
+    rgba(0, 110, 255, 0.6),
+    rgba(245, 118, 217, 0.6),
+    rgba(3, 192, 151, 0.6)
+  );
+  background-size: 200% auto;
+  background-clip: text; /* Standard */
+  -webkit-background-clip: text; /* Chrome/Safari */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Chrome/Safari */
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .border{
@@ -59,10 +82,10 @@
   padding: 2px; 
   background: linear-gradient(
     270deg,
-    rgba(0, 110, 255, 0.6),  /* light sky blue */
-    rgba(3, 192, 151, 0.6),    /* medium blue */
-    rgba(135, 206, 250, 0.6),  /* light sky blue */
-    rgba(245, 118, 217, 0.6)      /* deep navy blue */
+    rgba(0, 110, 255, 0.6),   
+    rgba(3, 192, 151, 0.6),     
+    rgba(135, 206, 250, 0.6),   
+    rgba(245, 118, 217, 0.6)      
   );
   background-size: 400% 400%;
   animation: shine-border 5s linear infinite;
@@ -95,7 +118,7 @@
     margin-bottom: 30px;
     /* font-weight: bold; */
 }
-.icon,.icon2,.icon3,.b {
+.icon,.icon2,.icon3,.b,.p {
     color: #1976d2;  
 }
 .email, .pass{
