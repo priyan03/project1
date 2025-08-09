@@ -18,17 +18,17 @@ const Login = () => {
             style={{ backgroundImage: `url(${bgGif})` }}>
             <div className="heading-text" style={
                 {
-                    fontSize: "2rem",
-                    fontWeight: "bold",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    textAlign: "center",
-                    width: "100%",
-                    padding: "10px"
+                    // fontSize: "2rem",
+                    // fontWeight: "bold",
+                    // display: "flex",
+                    // justifyContent: "center",
+                    // alignItems: "center",
+                    // textAlign: "center",
+                    // width: "100%",
+                    padding: "6px"
                 }
-                }><span className="shine">Innovation starts with a click </span><span>-</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{fontSize: "3rem", color:"GrayText"}}>X</span></div>
-                <marquee style={{fontWeight:"bold", color:"hsla(273, 100%, 51%, 0.80)",WebkitTextStroke: "0.4px black", textStroke: "1px black"}}>Priyan webX is a digital solutions service where a single user interaction
+                }><span className="shine">Innovation starts with a click </span><span>&nbsp;-&nbsp;</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{fontSize: "3rem", color:"GrayText"}}>X</span></div>
+                <marquee style={{fontWeight:"bold", color:"rgba(97, 97, 97, 0.8)",WebkitTextStroke: "0.6px black", textStroke: "1px black"}}>Priyan webX is a digital solutions service where a single user interaction
                      — a click — initiates innovative processes. From web application development to 
                      interactive user experiences, our service transforms simple actions into powerful outcomes, 
                      integrating modern UI/UX design, responsive technology, and scalable architecture to deliver
