@@ -34,10 +34,13 @@
     90deg,
     #000000,
     #000000,
+    #000000,
+    #000000,
+    #000000,
     #ffffff,
     rgba(0, 110, 255, 0.6),
-    rgba(245, 118, 217, 0.6),
-    rgba(3, 192, 151, 0.6)
+    rgba(243, 19, 194, 0.6),
+    rgba(0, 126, 99, 0.6)
   );
   background-size: 200% auto;
   background-clip: text; /* Standard */
@@ -62,7 +65,8 @@
 /* BOX */
 .box {
   border-radius: 2px;
-  width: clamp(350px, 70%, 350px);
+  width: clamp(350px, 70%, 250px);
+  margin-bottom: 20px;
   background: transparent;
   position: relative;
   padding: clamp(1.5rem, 3vw, 2rem);
@@ -82,10 +86,10 @@
   padding: 2px; 
   background: linear-gradient(
     270deg,
-    rgba(0, 110, 255, 0.6),   
-    rgba(3, 192, 151, 0.6),     
+    rgba(139, 187, 249, 0.6),   
+    rgba(192, 236, 205, 0.6),     
     rgba(135, 206, 250, 0.6),   
-    rgba(245, 118, 217, 0.6)      
+    rgba(249, 193, 237, 0.6)      
   );
   background-size: 400% 400%;
   animation: shine-border 5s linear infinite;
@@ -167,26 +171,30 @@
   }
 
   .heading-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 8px;
+    padding: 8px 15px;
     line-height: 1.2;
     text-align: center;
+    overflow-wrap: break-word;
   }
 
   .input-wrapper {
     flex-direction: column;       
-    align-items: center;          
+    align-items: stretch;          
     justify-content: flex-start;  
-    padding-top: 20px;           
-    min-height: auto;            
+    padding-top: 20px 15px 70px;           
+    min-height: auto;          
+    width: 100%;
+    gap: 15px;  
   }
 
   .img {
-    width: 90%;
-    padding-left: 0;
-    margin-bottom: 20px;          
-    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+    gap:0.75rem;
+    margin: 0 auto;
   }
 
   .box {
