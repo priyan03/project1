@@ -1,16 +1,27 @@
-import * as React from "react";
+import React, {useState} from "react";
 import logo from '../Logo Priyan webX.png';
 import bgGif from '../bgGif/bg.gif';
 import { TextField, Checkbox, FormControlLabel, colors } from '@mui/material';
 import Button from '@mui/material/Button';
 import { UserRoundSearch, Lock, CircleUserRound } from 'lucide-react';
 import "../styles/LoginStyle.css";
+import { Password } from "@mui/icons-material";
 const Login = () => {
     const Submits = () => {
-        console.log("Logged");
+        //console.log("Logged");
     }
-    const Register = () => {
-        console.log("Register")
+
+    const[name,setName] = useState({
+        email:"",
+        password:""
+    })
+
+    const handleClick = ()=>{
+        console.log(name);   
+    }
+    const handleChange = (e)=>{
+        const {name, value} = e.target
+        setName((prevData) => ({...prevData, [name] : value}))
     }
     return (
         <div
@@ -18,13 +29,6 @@ const Login = () => {
             style={{ backgroundImage: `url(${bgGif})` }}>
             <div className="heading-text" style={
                 {
-                    // fontSize: "2rem",
-                    // fontWeight: "bold",
-                    // display: "flex",
-                    // justifyContent: "center",
-                    // alignItems: "center",
-                    // textAlign: "center",
-                    // width: "100%",
                     padding: "6px"
                 }
             }><span>Innovation starts with a click </span><span>&nbsp;&nbsp;</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{ fontSize: "3rem", color: "GrayText" }}>X</span></div>
@@ -47,18 +51,20 @@ const Login = () => {
 
                         <div className="email">
                             <CircleUserRound size={17} className="icon2" />
-                            <TextField label="Enter e-mail address" variant="outlined" type="email" size="small" fullWidth />
+                            <TextField name="email" onChange={(e) => handleChange(e)} 
+                            label="Enter e-mail address" variant="outlined" type="email" size="small" fullWidth />
                         </div>
 
                         <div className="pass">
                             <Lock size={16} className="icon3" />
-                            <TextField label="Password" variant="outlined" type="password" size="small" fullWidth />
+                            <TextField name="password" onChange={(e) => handleChange(e)}
+                            label="Password" variant="outlined" type="password" size="small" fullWidth />
                             <FormControlLabel control={<Checkbox size="smaller" />} /><span className="span" style={{ fontSize: "0.6rem" }}>Remember me</span>
                             <span><a className="a1" href="#" style={{ fontSize: "0.6rem", color: "#1976d2" }}>Forgot password?</a></span>
 
                         </div>
-                        <Button className="button-field" variant="contained" onClick={Submits} size="small">Sign In</Button>
-                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <a href="#" className="a"><span onClick={Register} style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></a></p>
+                        <Button className="button-field" variant="contained" onClick={handleClick} size="small">Sign In</Button>
+                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <a href="#" className="a"><span style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></a></p>
                     </div>
                 </div>
             </div>
