@@ -23,38 +23,56 @@
     width: 100%;
     gap: 10px;
 }
+
+
 .heading-text {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   width: 100%;
-}
-.shine{
-    background: linear-gradient(
-    90deg,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #ffffff,
-    rgba(0, 110, 255, 0.6),
-    rgba(243, 19, 194, 0.6),
-    rgba(0, 126, 99, 0.6)
-  );
-  background-size: 200% auto;
-  background-clip: text; /* Standard */
-  -webkit-background-clip: text; /* Chrome/Safari */
-  color: transparent;
-  -webkit-text-fill-color: transparent; /* Chrome/Safari */
-  animation: shine 5s linear infinite;
+  background: transparent;
+  position: relative;
+  border-radius: 8px;
+  z-index: 1; /* Keep text above border */
+  padding: 8px 16px; /* Space so border doesn't touch text */
+  box-sizing: border-box;
 }
 
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
+/* Shiny animated border */
+.heading-text::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  border-radius: inherit;
+  padding: 4px; /* Border thickness */
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    270deg,
+    rgba(249, 193, 237, 0.6),
+    rgba(139, 187, 249, 0.6),
+    rgba(192, 236, 205, 0.6),
+    rgba(135, 206, 250, 0.6)
+  ) border-box;
+  
+  background-size: 400% 400%;
+  animation: shine-border 5s linear infinite;
+
+  border: 4px solid transparent; /* Needed for border-box trick */
+  pointer-events: none; /* Make sure it doesn’t block clicks */
+  z-index: -1; /* Put behind the text */
 }
+
+@keyframes shine-border {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 
 .border{
     display: flex;
@@ -213,7 +231,7 @@
   .a1 {
     text-align: right;
     text-decoration: none;
-    margin-left: 46.3%;
+    margin-left: 46.5%;
   }
 
   .span {
