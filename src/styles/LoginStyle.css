@@ -65,7 +65,7 @@
 /* BOX */
 .box {
   border-radius: 2px;
-  width: clamp(350px, 70%, 250px);
+  width: clamp(350px, 80%, 250px);
   margin-bottom: 20px;
   background: transparent;
   position: relative;
@@ -211,13 +211,13 @@
   }
 
   .a1 {
-    margin-left: 0;
-    display: block;
     text-align: right;
+    text-decoration: none;
+    margin-left: 39.4%;
   }
 
   .span {
-    margin-left: 0;
+    margin-left: -10;
   }
 
   .email, .pass {
