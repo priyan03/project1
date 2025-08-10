@@ -213,11 +213,11 @@
   .a1 {
     text-align: right;
     text-decoration: none;
-    margin-left: 40%;
+    margin-left: 10%;
   }
 
   .span {
-    margin-left: -8;
+    margin-left: 8%;
   }
 
   .email, .pass {
