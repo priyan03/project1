@@ -192,15 +192,8 @@
     transform: none;
   }
 
-  .heading-text {
-    display: block;  
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 8px 15px;
-    line-height: 1.3;
-    text-align: center;
-    overflow-wrap: break-word;
-    word-break: break-word;
+  .heading-text,marquee {
+    display: none;
   }
 
   .input-wrapper {
