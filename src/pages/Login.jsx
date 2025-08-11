@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import logo from '../Logo Priyan webX.png';
+import logo from '../Logo-Priyan-webX.png';
 import bgGif from '../bgGif/bg.gif';
 import { TextField, Checkbox, FormControlLabel, colors } from '@mui/material';
 import Button from '@mui/material/Button';
