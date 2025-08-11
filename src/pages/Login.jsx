@@ -5,7 +5,6 @@ import { TextField, Checkbox, FormControlLabel, colors } from '@mui/material';
 import Button from '@mui/material/Button';
 import { UserRoundSearch, Lock, CircleUserRound } from 'lucide-react';
 import "../styles/LoginStyle.css";
-import { Password } from "@mui/icons-material";
 const Login = () => {
     const Submits = () => {
         //console.log("Logged");
@@ -31,9 +30,10 @@ const Login = () => {
                 {
                     padding: "6px"
                 }
-            }><span>Innovation starts with a click </span><span>&nbsp;&nbsp;</span><span className="p">P</span>riyan <span className="p">W</span>eb<span style={{ fontSize: "3rem", color: "GrayText" }}>X</span></div>
-            <marquee style={{ backgroundColor: "#1976d2", padding: "3px" , color:"white"}}>
-                Priyan webX is a digital solutions service where a single user interaction
+            }><span style={{color:"hsla(285, 80%, 26%, 1.00)", fontWeight:"bolder"}}>Innovation starts with a click</span><span>&nbsp;- &nbsp;</span>
+            <span style={{fontSize:"2rem"}}>leading to Verte</span><span className="p" style={{fontSize:"2.1rem"}}>X</span></div>
+            <marquee style={{backgroundColor: "#6f00ff49", padding: "2px" , color:"black", fontSize:"10px", fontWeight:"bold"}}>
+                ProtonounX is a digital solutions service where a single user interaction
                 — a click — initiates innovative processes. From web application development to
                 interactive user experiences, our service transforms simple actions into powerful outcomes,
                 integrating modern UI/UX design, responsive technology, and scalable architecture to deliver
@@ -45,7 +45,7 @@ const Login = () => {
                     <div className="box">
                         <UserRoundSearch size={62} className="icon" />
                         <h1 className="bt">
-                            <span className="b">P</span>riyan <span className="b">W</span>eb<span style={{ fontSize: "3rem", color: "GrayText" }}>X</span>
+                            <span style={{fontSize:"2.7rem"}}>Protonoun</span><span className="p" style={{ fontSize: "3rem"}}>X</span>
                         </h1>
                         <span className="si">Sign in to your account</span>
 
