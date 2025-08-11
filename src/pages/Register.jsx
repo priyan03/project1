@@ -1,10 +1,10 @@
 import React,{ useState } from 'react'
-import '../styles/RegisterStyle'
+import '../styles/RegisterStyle.css'
 
 const Register = () => {
   return (
     <div>
-        <h1>Register Page</h1>
+        <h1 className='e'>Register Page</h1>
       <p>This is where the registration form will be.</p>
     </div>
   )
