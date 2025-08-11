@@ -1,11 +1,19 @@
+import { Routes, Route, Navigate } from "react-router-dom"
+
 import Login from "./pages/Login"
+import Register from "./pages/Register"
+
 import "./styles/LoginStyle.css"
+import "./styles/RegisterStyle.css"
 
 function App() {
-  //const [count, setCount] = useState(0)
 
   return (
-    <Login/>
+    <Routes>
+      <Route path="/" element={<Navigate to="/login" replace />}/>
+      <Route path="/login" element={<Login/>}/> 
+      <Route path="/register"element={<Register/>}/>
+    </Routes>
   )
 }
 
