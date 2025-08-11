@@ -5,10 +5,12 @@ import { TextField, Checkbox, FormControlLabel, colors } from '@mui/material';
 import Button from '@mui/material/Button';
 import { UserRoundSearch, Lock, CircleUserRound } from 'lucide-react';
 import "../styles/LoginStyle.css";
+import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
     const Submits = () => {
         //console.log("Logged");
     }
+    const navigate = useNavigate();
 
     const[name,setName] = useState({
         email:"",
@@ -16,7 +18,7 @@ const Login = () => {
     })
 
     const handleClick = ()=>{
-        console.log(name);   
+        console.log("Login data : ",name);    
     }
     const handleChange = (e)=>{
         const {name, value} = e.target
@@ -66,7 +68,7 @@ const Login = () => {
 
                         </div>
                         <Button className="button-field" variant="contained" onClick={handleClick} size="small">Sign In</Button>
-                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <a href="#" className="a"><span style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></a></p>
+                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <Link to="/register" className="a"><span style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></Link></p>
                     </div>
                 </div>
             </div>
