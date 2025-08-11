@@ -62,11 +62,11 @@ const Login = () => {
                             <TextField name="password" onChange={(e) => handleChange(e)}
                             label="Password" variant="outlined" type="password" size="small" fullWidth />
                             <FormControlLabel control={<Checkbox size="smaller" />} /><span className="span" style={{ fontSize: "0.6rem" }}>Remember me</span>
-                            <span><a className="a1" href="#" style={{ fontSize: "0.6rem", color: "#1976d2" }}>Forgot password?</a></span>
+                            <span><link className="a1" to="Forgot password?" style={{ fontSize: "0.6rem", color: "#1976d2" }}>Forgot password?</link></span>
 
                         </div>
                         <Button className="button-field" variant="contained" onClick={handleClick} size="small">Sign In</Button>
-                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <a href="#" className="a"><span style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></a></p>
+                        <p style={{ fontSize: "0.7rem" }}>Don't have an account? <link to="/register" className="a"><span style={{ fontWeight: "Bold", color: "#1976d2" }}>Register</span></link></p>
                     </div>
                 </div>
             </div>
