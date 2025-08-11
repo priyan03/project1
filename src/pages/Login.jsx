@@ -26,11 +26,13 @@ const Login = () => {
         <div
             className="backgroundimage"
             style={{ backgroundImage: `url(${bgGif})` }}>
+                
             <div className="heading-text" style={
                 {
                     padding: "6px"
                 }
-            }><span style={{color:"hsla(285, 80%, 26%, 1.00)", fontWeight:"bolder"}}>Innovation starts with a click</span><span>&nbsp;- &nbsp;</span>
+            }>
+            <span style={{color:"hsla(285, 80%, 26%, 1.00)", fontWeight:"bolder"}}>Innovation starts with a click</span><span>&nbsp;- &nbsp;</span>
             <span style={{fontSize:"2rem"}}>leading to Verte</span><span className="p" style={{fontSize:"2.1rem"}}>X</span></div>
             <marquee style={{backgroundColor: "#6f00ff49", padding: "2px" , color:"black", fontSize:"10px", fontWeight:"bold"}}>
                 ProtonounX is a digital solutions service where a single user interaction
