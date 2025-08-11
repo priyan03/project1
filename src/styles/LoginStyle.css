@@ -32,7 +32,6 @@
   width: 100%;
   background: transparent;
   position: relative;
-  border-radius: 8px;
   z-index: 1; /* Keep text above border */
   padding: 8px 16px; /* Space so border doesn't touch text */
   box-sizing: border-box;
@@ -46,7 +45,6 @@
   left: 0; 
   right: 0; 
   bottom: 0;
-  border-radius: inherit;
   padding: 4px; /* Border thickness */
   box-sizing: border-box;
 
@@ -188,15 +186,8 @@
     transform: none;
   }
 
-  .heading-text {
-    display: block;  
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 8px 15px;
-    line-height: 1.3;
-    text-align: center;
-    overflow-wrap: break-word;
-    word-break: break-word;
+  .heading-text , marquee{
+    display: none;
   }
 
   .input-wrapper {
