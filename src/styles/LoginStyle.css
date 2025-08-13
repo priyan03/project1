@@ -1,17 +1,42 @@
 *{  
     box-sizing: border-box;
 }
-.backgroundimage{
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: cover;
-    width: 100%;
+.backgroundimage {
+  position: relative;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden; /* Prevents pseudo-element overflow */
 }
+
+/* Blurred background layer */
+.backgroundimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Uses same background as parent */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust blur strength */
+  z-index: 0; /* Stay behind content */
+}
+
+/* Make sure content stays above blur */
+.backgroundimage > * {
+  position: relative;
+  z-index: 1;
+}
+
 .img{
-    width: clamp(250px, 100%, 450px);
-    margin-left: 5%;
+    width: clamp(500px, 80%, 400px);
+    margin-left: 4%;
+    justify-self: center;
 
 }
 .input-wrapper{  
@@ -24,7 +49,6 @@
     max-width: 1200px;           
     margin: 0 auto;             
     padding:10px;
-    box-sizing: border-box;
 }
 
 
@@ -38,7 +62,6 @@
   border-radius: 8px;
   z-index: 1; /* Keep text above border */
   padding: 8px 16px; /* Space so border doesn't touch text */
-  box-sizing: border-box;
 }
 
 /* Shiny animated border */
@@ -51,7 +74,6 @@
   bottom: 0;
   border-radius: inherit;
   padding: 4px; /* Border thickness */
-  box-sizing: border-box;
 
   background: linear-gradient(
     270deg,
@@ -86,10 +108,11 @@
 
 /* BOX */
 .box {
-  border-radius: 2px;
-  width: clamp(350px, 80%, 250px);
-  margin-bottom: 20px;
-  background: transparent;
+  border-radius: 10px;
+  width: clamp(360px, 80%, 250px);
+  margin-top: 20px;
+  /* background: linear-gradient(to top, #cbf0f9, transparent); */
+  background-color: white;
   position: relative;
   padding: clamp(1.5rem, 3vw, 2rem);
   display: flex;
@@ -100,7 +123,7 @@
 }
 
 /* Animated shining border */
-.box::before {
+/* .box::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -131,7 +154,7 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
+} */
 
 
 /* BOX */
@@ -163,7 +186,7 @@
     margin-left: 39.4%;
 }
 .span{
-    margin-left: -10%;
+    margin-left: -9%;
 }
 
 
