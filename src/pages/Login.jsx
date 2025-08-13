@@ -7,9 +7,9 @@ import { UserRoundSearch, Lock, CircleUserRound } from 'lucide-react';
 import "../styles/LoginStyle.css";
 import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
-    const Submits = () => {
-        //console.log("Logged");
-    }
+    // const Submits = () => {
+    //     console.log("Logged");
+    // }
     const navigate = useNavigate();
 
     const[name,setName] = useState({
@@ -49,7 +49,7 @@ const Login = () => {
                     <div className="box">
                         <UserRoundSearch size={62} className="icon" />
                         <h1 className="bt">
-                            <span style={{fontSize:"2.7rem"}}>Protonoun</span><span className="p" style={{ fontSize: "3rem"}}>X</span>
+                            <span style={{fontSize:"3rem"}}>Protonoun</span><span className="p" style={{ fontSize: "3.5rem"}}>X</span>
                         </h1>
                         <span className="si">Sign in to your account</span>
 
