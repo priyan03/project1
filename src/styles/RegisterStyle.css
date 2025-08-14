@@ -104,57 +104,49 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .backgroundimageR {
-    background-position: center;
-    background-size: cover;
-  }
-
-  /* Wrapper - stack vertically */
   .inputwrapper {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    padding: 20px 15px 50px !important;
-    gap: 15px !important;
-    max-width: 95% !important;
-    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 15px 50px;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   /* Logo */
   .imgR {
-    width: 100% !important;
-    max-width: 350px !important;
-    padding: 1.5rem !important;
-    margin: 0 auto !important;
-    margin-top: 0 !important;
-    margin-right: 0 !important;
+    order: 1; /* Always first */
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 1.5rem;
   }
 
-  /* Project name */
+  /* Title */
   .grid0 {
-    font-size: 1.8rem !important;
-    font-weight: bold !important;
-    text-align: center !important;
-    margin: 0 auto !important;
-    padding: 0.5rem 0 !important;
+    order: 2; /* Always second */
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  /* Form containers */
+  /* Box elements */
   .grid1,
   .grid2 {
-    width: 94% !important;
-    padding: 1.5rem !important;
-    gap: 0.75rem !important;
-    margin: 0 auto !important;
-    font-size: 0.9rem !important;
-    margin-top: 0 !important;
+    order: 3; /* Always last */
+    width: 50%;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0;
   }
 
-  /* Small texts */
   .rR,
   .rR1,
   .rR2 {
-    font-size: 0.75rem !important;
+    font-size: 0.75rem;
   }
 }
 
