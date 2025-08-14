@@ -120,26 +120,28 @@
   .imgR {
     width: 70%;
     max-width: 220px;
-    margin: 0 auto;
+    margin: 0 auto;  /* Center logo */
+    margin-right: 0 !important; /* Override the 180% from desktop */
   }
 
   .grid0 {
-    font-size: 1.4rem; /* smaller heading */
+    font-size: 1.4rem !important; /* Smaller heading */
     text-align: center;
+    margin-top: 0 !important; /* Remove large negative margin */
     margin-bottom: 10px;
   }
 
   .grid1,
   .grid2 {
-    width: 100%;
+    width: 100% !important;
     padding: 10px;
     font-size: 0.9rem;
+    margin-top: 0 !important; /* Remove weird spacing */
   }
 
   .rR,
   .rR1,
   .rR2 {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
 }
-
