@@ -203,7 +203,6 @@
     margin: 5px;
 }
 
-
 /* MOBILE STYLES */
 @media screen and (max-width: 600px) {
 
@@ -228,7 +227,7 @@
 
     .grid1, .grid2 {
         width: 95%;
-        margin: 5px auto;
+        margin: 0 auto;
         padding: 10px;
     }
 
@@ -241,44 +240,45 @@
         font-size: 9px;
     }
 
-    /* FIRSTNAME & SURNAME IN ONE ROW */
-    .grid2 .MuiTextField-root[name="firstname"],
-    .grid2 .MuiTextField-root[name="surname"] {
-        width: 48% !important;
-        margin: 1% 1% 1% 1%;
+    /* FIRSTNAME, SURNAME & AGE IN ONE ROW */
+    .name-age-row {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        margin-bottom: 10px;
     }
-    .grid2 .MuiTextField-root[name="firstname"] {
-        margin-right: 2% !important;
+    .name-age-row .MuiTextField-root {
+        flex: 1; /* Each takes equal width */
     }
 
-    /* DOB: DAY, MONTH, YEAR & AGE IN ONE ROW */
+    /* DOB: DAY, MONTH, YEAR in one row */
     .dob-row {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: flex;
         gap: 5px;
+        width: 100%;
+        justify-content: space-between;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
     .dob-row .MuiFormControl-root,
     .dob-row .MuiTextField-root {
-        width: 23% !important; /* Day, Month, Year, Age fit in one row */
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        flex: 1; /* All equal width */
     }
 
     /* GENDER IN ONE ROW */
     .gender-options {
-        flex-direction: row !important;
-        flex-wrap: wrap;
+        display: flex !important;
         gap: 5px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
-
     .gender-box {
-        width: 30% !important; /* 3 options in one row */
+        flex: 1; /* Each gender option takes equal width */
+        display: flex;
+        justify-content: center;
     }
 
+    /* Full width text fields (mobile friendly) */
     .full-width {
         width: 100% !important;
         margin: 5px 0 !important;
