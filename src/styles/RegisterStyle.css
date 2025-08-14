@@ -102,7 +102,56 @@
     margin: 5px;
 }
 /* Mobile */
+@media (max-width: 768px) {
+  /* Form container */
+  .grid2 {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
-@media (width: 100px) {
+  /* Label text above inputs */
+  .grid2 > div[style*="color: #1976d2"] {
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  /* Name fields */
+  .grid2 .MuiTextField-root {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Date of Birth row -> stack vertically */
+  .grid2 > div[style*="display: flex"] {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Select dropdowns in DOB row */
+  .grid2 .MuiFormControl-root {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Age field */
+  .grid2 input[type="number"] {
+    width: 100%;
+  }
+
+  /* Gender row stacked */
+  .grid2 .MuiRadioGroup-root {
+    flex-direction: column;
+  }
+  .grid2 .MuiRadioGroup-root > .MuiBox-root {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid2 .MuiRadioGroup-root .MuiBox-root > div {
+    width: 100%;
+  }
 }
 
