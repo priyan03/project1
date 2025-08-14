@@ -103,7 +103,7 @@
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 768px) {
   .backgroundimageR {
     background-position: center;
     background-size: cover;
@@ -111,28 +111,35 @@
 
   .inputwrapper {
     flex-direction: column;
-    gap: 1rem;
-    padding: 20px;
+    gap: 0.8rem;
+    padding: 15px;
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .imgR {
-    width: 80%;
-    max-width: 300px;
+    width: 70%;
+    max-width: 220px;
     margin: 0 auto;
   }
 
   .grid0 {
-    font-size: 2rem;
-    margin-top: 0;
+    font-size: 1.4rem; /* smaller heading */
+    text-align: center;
+    margin-bottom: 10px;
   }
 
-  .grid1, .grid2 {
+  .grid1,
+  .grid2 {
     width: 100%;
-    margin-top: 0;
-    padding: 15px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 
-  .rR, .rR1, .rR2 {
-    font-size: 0.7rem;
+  .rR,
+  .rR1,
+  .rR2 {
+    font-size: 0.75rem;
   }
 }
+
