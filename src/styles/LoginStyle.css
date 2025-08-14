@@ -223,7 +223,7 @@
     flex-direction: column;       
     align-items: stretch;          
     justify-content: flex-start;  
-    padding-top: 20px 15px 70px;           
+    padding: 20px 15px 70px;           
     min-height: auto;          
     gap: 15px;  
   }
