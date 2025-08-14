@@ -111,16 +111,14 @@
     justify-content: flex-start;
     padding: 20px 15px 50px;
     gap: 15px;
-    max-width: 100%;
+    width: 10%;
     margin: 0 auto;
   }
 
   /* Logo */
   .imgR {
-    order: 1; /* Always first */
-    width: 100%;
+    width: 10%;
     max-width: 350px;
-    margin: 0 auto;
     padding: 1.5rem;
   }
 
@@ -137,7 +135,7 @@
   .grid1,
   .grid2 {
     order: 3; /* Always last */
-    width: 50%;
+    width: 10%;
     padding: 1.5rem;
     font-size: 0.9rem;
     margin-top: 0;
