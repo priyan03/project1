@@ -207,95 +207,96 @@
 /* MOBILE STYLES */
 @media screen and (max-width: 600px) {
 
-    /* Input wrapper full width on mobile */
     .inputwrapper {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         padding: 10px;
-        gap: 1rem;
     }
 
-    /* Logo size smaller and centered */
     .imgR {
         width: 50%;
         max-width: 200px;
         margin: 0 auto 20px auto;
     }
 
-    /* Title font smaller and centered */
     .grid0 {
         font-size: 2rem;
         margin-top: -10%;
         text-align: center;
     }
 
-    /* Grid1 and Grid2 width adjustment */
     .grid1, .grid2 {
         width: 95%;
         margin: 5px auto;
         padding: 10px;
     }
 
-    /* Subheading font smaller */
     .subheading {
         font-size: 0.9rem;
         padding-top: 5px;
     }
 
-    /* Labels font adjustment */
     .label-small, .label-small2, .label-small3 {
         font-size: 9px;
     }
 
-    /* DOB row stacked vertically */
+    /* FIRSTNAME & SURNAME IN ONE ROW */
+    .grid2 .MuiTextField-root[name="firstname"],
+    .grid2 .MuiTextField-root[name="surname"] {
+        width: 48% !important;
+        margin: 1% 1% 1% 1%;
+    }
+    .grid2 .MuiTextField-root[name="firstname"] {
+        margin-right: 2% !important;
+    }
+
+    /* DOB: DAY, MONTH, YEAR & AGE IN ONE ROW */
     .dob-row {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .dob-row .MuiFormControl-root,
     .dob-row .MuiTextField-root {
-        width: 100% !important;
+        width: 23% !important; /* Day, Month, Year, Age fit in one row */
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
 
-    /* Gender row stacked vertically */
+    /* GENDER IN ONE ROW */
     .gender-options {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     .gender-box {
-        width: 100%;
+        width: 30% !important; /* 3 options in one row */
     }
 
-    /* Full width input fields */
     .full-width {
         width: 100% !important;
         margin: 5px 0 !important;
     }
 
-    /* Buttons & Links */
     .signup-btn, .login-link {
         width: 100%;
         text-align: center;
         font-size: 14px;
     }
 
-    /* Info and terms text smaller */
     .info-text, .terms-text, .terms-text2 {
         font-size: 8px;
         text-align: center;
     }
 
-    /* Small bottom texts */
     .rR, .rR1, .rR2 {
         font-size: 8px;
         text-align: center;
     }
 }
-
