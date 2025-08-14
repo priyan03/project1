@@ -131,7 +131,7 @@
   /* Title */
   .grid0 {
     font-size: 2rem;
-    margin-top: -10px;
+    margin-top: -10%;
     text-align: center;
   }
 
@@ -164,12 +164,6 @@
     margin: 5px 0 !important;
   }
 
-  /* Date of Birth row stacked vertically */
-  .grid2 > div[style*="display: flex"] {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px !important;
-  }
 
   /* Gender row stacked */
   .grid2 .MuiRadioGroup-root {
