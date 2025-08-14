@@ -103,7 +103,7 @@
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
   .backgroundimageR {
     background-position: center;
     background-size: cover;
