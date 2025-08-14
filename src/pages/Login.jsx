@@ -18,7 +18,18 @@ const Login = () => {
     })
 
     const handleClick = ()=>{
-        console.log("Login data : ",name);    
+        console.log("Login data : ",name); 
+        try{
+            if(name.email === "abc@gmail.com" && name.password === "Admin@123"){
+                navigate("/home")
+            }
+            else{
+                navigate("/")
+            }
+        } 
+        catch(err){
+            console.error(err.message);
+        }  
     }
     const handleChange = (e)=>{
         const {name, value} = e.target
