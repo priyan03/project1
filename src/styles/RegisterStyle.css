@@ -1,6 +1,8 @@
-*{  
+* {  
     box-sizing: border-box;
 }
+
+/* Background and blur */
 .backgroundimageR {
   position: relative;
   min-height: 100vh;
@@ -12,7 +14,6 @@
   overflow: hidden; /* Prevents pseudo-element overflow */
 }
 
-/* Blurred background layer */
 .backgroundimageR::before {
   content: "";
   position: absolute;
@@ -27,12 +28,13 @@
   z-index: 0; /* Stay behind content */
 }
 
-/* Make sure content stays above blur */
 .backgroundimageR > * {
   position: relative;
   z-index: 1;
 }
-.inputwrapper{
+
+/* Wrapper for inputs and grid */
+.inputwrapper {
     min-height: 100vh;
     display: flex;
     justify-content: center; 
@@ -42,25 +44,27 @@
     width: 100%;
     max-width: 1400px;           
     margin: 0 auto;             
-    padding:10px;
-    /* background: linear-gradient(to right, aqua, transparent); */
-    /* background-color: rgba(146, 248, 239, 0.436); */
+    padding: 10px;
 }
-.imgR{
-    width : 35%;
+
+/* Logo */
+.imgR {
+    width: 35%;
     max-width: 600px;
     margin-right: 180%;
     justify-self: center;
 }
 
-.grid-container{
+/* Grid container */
+.grid-container {
     display: grid;
     padding: 10px;
     align-self: start;
     justify-self: start;
-
 }
-.grid0{  
+
+/* Title ProtonounX */
+.grid0 {  
     padding: 10px;
     margin-top: -25%;
     text-align: center;
@@ -68,7 +72,14 @@
     font-size: 4rem;
     font-weight: bold;
 }
-.grid1{  
+
+/* Highlight for X */
+.highlightX {
+    color: #1976d2;
+}
+
+/* Top heading box */
+.grid1 {  
     margin-top: -5%;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.151);
     border-top-left-radius: 10px;
@@ -79,7 +90,14 @@
     width: 80%;
     justify-self: center;
 }
-.grid2{
+
+.subheading {
+    color: #00000083;
+    padding-top: 1%;
+}
+
+/* Bottom input box */
+.grid2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
@@ -88,84 +106,196 @@
     width: 80%;
     justify-self: center;
 }
-.rR{
+
+/* Labels */
+.label-small {
+    color: #1976d2;
+    font-size: 10px;
+    margin-top: 1px;
+}
+.label-small2 {
+    color: #1976d2;
+    font-size: 10px;
+}
+.label-small3 {
+    color: #1976d2;
+    font-size: 10px;
+}
+
+
+/* Date of birth row */
+.dob-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+/* Gender row */
+.gender-row {
+    margin-top: 13px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 123px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Full width text fields */
+.full-width {
+    width: 91%;
+    margin-left: 0.1rem;
+    margin-top: 10px !important;
+    margin-bottom: 1px !important;
+}
+
+/* Info and terms text */
+.info-text {
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.link-blue {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.terms-text {
+    font-size: 9px;
+    color: #333;
+}
+.terms-text2 {
+    font-size: 9px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* Login link */
+.login-link {
+    color: #ff0073ff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/* Small bottom text in grid2 */
+.rR {
     font-size: 9px;
     margin: 3px;
 }
-.rR1{
+
+.rR1 {
     font-size: 9px;
     margin: 5px;
     text-decoration: none;
 }
-.rR2{
+
+.rR2 {
     font-size: 9px;
     margin: 5px;
 }
-/* Mobile */
-/* Final Mobile Alignment Fix */
-@media (max-width: 600px) {
 
-  /* Wrapper for entire form */
-  .grid0,
-  .grid1,
-  .grid2 {
-    padding-left: 10%;
-    padding-right: 10%;
-    box-sizing: border-box;
-  }
 
-  /* Reduce top gap for heading */
-  .grid0 {
-    margin-top: 5px;
-  }
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
 
-  /* First name & surname - full width */
-  .name-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .name-fields .MuiTextField-root {
-    width: 100%;
-  }
+    /* Input wrapper full width on mobile */
+    .inputwrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 1rem;
+    }
 
-  /* Date of Birth - one row */
-  .dob-fields {
-    display: flex;
-    gap: 6px;
-  }
-  .dob-fields .MuiFormControl-root {
-    flex: 1;
-    min-width: 0;
-  }
+    /* Logo size smaller and centered */
+    .imgR {
+        width: 50%;
+        max-width: 200px;
+        margin: 0 auto 20px auto;
+    }
 
-  /* Age - full width in separate row */
-  .age-field {
-    width: 100%;
-    margin-top: 8px;
-  }
+    /* Title font smaller and centered */
+    .grid0 {
+        font-size: 2rem;
+        margin-top: -10%;
+        text-align: center;
+    }
 
-  /* Gender row - equal size buttons */
-  .gender-group {
-    display: flex;
-    gap: 6px;
-    justify-content: space-between;
-  }
-  .gender-group .MuiBox-root {
-    flex: 1;
-    min-width: 0;
-  }
-  .gender-group label {
-    width: 100%;
-    font-size: 14px;
-    padding: 8px 4px;
-    text-align: center;
-  }
+    /* Grid1 and Grid2 width adjustment */
+    .grid1, .grid2 {
+        width: 95%;
+        margin: 5px auto;
+        padding: 10px;
+    }
 
-  /* All inputs same size */
-  input, select {
-    font-size: 14px;
-    height: 40px;
-  }
+    /* Subheading font smaller */
+    .subheading {
+        font-size: 0.9rem;
+        padding-top: 5px;
+    }
+
+    /* Labels font adjustment */
+    .label-small, .label-small2, .label-small3 {
+        font-size: 9px;
+    }
+
+    /* DOB row stacked vertically */
+    .dob-row {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .dob-row .MuiFormControl-root,
+    .dob-row .MuiTextField-root {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Gender row stacked vertically */
+    .gender-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gender-box {
+        width: 100%;
+    }
+
+    /* Full width input fields */
+    .full-width {
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+
+    /* Buttons & Links */
+    .signup-btn, .login-link {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Info and terms text smaller */
+    .info-text, .terms-text, .terms-text2 {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    /* Small bottom texts */
+    .rR, .rR1, .rR2 {
+        font-size: 8px;
+        text-align: center;
+    }
 }
 
