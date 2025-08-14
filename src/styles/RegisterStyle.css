@@ -103,58 +103,83 @@
 }
 /* Mobile */
 @media (max-width: 480px) {
-  /* Container */
+  /* Reduce overall wrapper size */
+  .inputwrapper {
+    min-height: auto;
+    padding: 5px;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Keep both grids same width */
+  .grid1,
   .grid2 {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    max-width: 350px;
   }
 
-  /* First & last name in one row */
-  .grid2 .MuiTextField-root[name="firstname"],
-  .grid2 .MuiTextField-root[name="surname"] {
-    width: calc(50% - 6px);
+  /* Headings in grid1 */
+  .grid1 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .grid1 p {
+    font-size: 0.85rem;
+    padding-top: 0.2rem;
   }
 
-  /* Name row spacing */
-  .grid2 .MuiTextField-root[name="firstname"] {
-    margin-right: 6px;
-  }
-  .grid2 .MuiTextField-root[name="surname"] {
-    margin-left: 6px;
+  /* Form labels */
+  .grid2 > div[style*="color: #1976d2"] {
+    margin-right: 0;
+    margin-bottom: 2px;
+    font-size: 9px;
   }
 
-  /* DOB row in one line with smaller fields */
+  /* Name row */
+  .grid2 .MuiTextField-root {
+    flex: 1;
+  }
+  .grid2 .MuiTextField-root:first-of-type {
+    margin-right: 8px;
+  }
+
+  /* Firstname + Surname on same line */
+  .grid2 > .MuiTextField-root:nth-of-type(1),
+  .grid2 > .MuiTextField-root:nth-of-type(2) {
+    display: inline-block;
+    width: calc(50% - 4px);
+    vertical-align: top;
+  }
+
+  /* Date of Birth row */
   .grid2 > div[style*="display: flex"] {
-    flex-direction: row;
     flex-wrap: nowrap;
     gap: 6px;
+    margin-top: 8px;
   }
-  .grid2 .MuiFormControl-root {
-    min-width: 60px;
-    width: 25%;
-  }
+  .grid2 .MuiFormControl-root,
   .grid2 input[type="number"] {
     width: 25%;
   }
 
-  /* Gender row compact in one line */
+  /* Gender row */
   .grid2 .MuiRadioGroup-root {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .grid2 .MuiRadioGroup-root .MuiBox-root {
     gap: 6px;
   }
+  .grid2 .MuiRadioGroup-root .MuiBox-root {
+    flex: 1;
+  }
   .grid2 .MuiRadioGroup-root .MuiBox-root > div {
-    width: auto;
-    padding: 2px 4px;
+    width: 100%;
   }
 
-  /* Labels closer to inputs */
-  .grid2 > div[style*="color: #1976d2"] {
-    margin-bottom: 2px;
-    font-size: 9px;
+  /* Compact spacing inside form */
+  .grid2 .MuiTextField-root,
+  .grid2 .MuiFormControl-root {
+    margin-bottom: 8px;
   }
 }
 
