@@ -1,49 +1,53 @@
-* {  
+* {
     box-sizing: border-box;
 }
 
 /* Background and blur */
 .backgroundimageR {
-  position: relative;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden; /* Prevents pseudo-element overflow */
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    /* Prevents pseudo-element overflow */
 }
 
 .backgroundimageR::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit; /* Uses same background as parent */
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px); /* Adjust blur strength */
-  z-index: 0; /* Stay behind content */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    /* Uses same background as parent */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    /* Adjust blur strength */
+    z-index: 0;
+    /* Stay behind content */
 }
 
-.backgroundimageR > * {
-  position: relative;
-  z-index: 1;
+.backgroundimageR>* {
+    position: relative;
+    z-index: 1;
 }
 
 /* Wrapper for inputs and grid */
 .inputwrapper {
     min-height: 100vh;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;             
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 1400px;           
-    margin: 0 auto;             
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -64,7 +68,7 @@
 }
 
 /* Title ProtonounX */
-.grid0 {  
+.grid0 {
     padding: 10px;
     margin-top: -25%;
     text-align: center;
@@ -79,7 +83,7 @@
 }
 
 /* Top heading box */
-.grid1 {  
+.grid1 {
     margin-top: -5%;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.151);
     border-top-left-radius: 10px;
@@ -113,10 +117,12 @@
     font-size: 10px;
     margin-top: 1px;
 }
+
 .label-small2 {
     color: #1976d2;
     font-size: 10px;
 }
+
 .label-small3 {
     color: #1976d2;
     font-size: 10px;
@@ -172,6 +178,7 @@
     font-size: 9px;
     color: #333;
 }
+
 .terms-text2 {
     font-size: 9px;
     color: #333;
@@ -225,7 +232,8 @@
         line-height: 1.2;
     }
 
-    .grid1, .grid2 {
+    .grid1,
+    .grid2 {
         width: 100%;
         margin: 0 auto;
         padding: 3vw;
@@ -237,7 +245,9 @@
         padding-top: 1vw;
     }
 
-    .label-small, .label-small2, .label-small3 {
+    .label-small,
+    .label-small2,
+    .label-small3 {
         font-size: 0.7rem;
     }
 
@@ -246,9 +256,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2vw;
-        width: 100%;
+        width: 140%;
         margin-bottom: 3vw;
     }
+
     .name-age-row .MuiTextField-root {
         flex: 1;
         min-width: 45%;
@@ -262,6 +273,7 @@
         width: 100%;
         margin: 3vw 0;
     }
+
     .dob-row .MuiFormControl-root,
     .dob-row .MuiTextField-root {
         flex: 1;
@@ -272,14 +284,19 @@
     .gender-options {
         display: flex !important;
         gap: 2vw;
-        justify-content: space-between;
+        justify-content: center;
+        /* center instead of space-between */
         flex-wrap: wrap;
+        /* allow wrapping */
     }
+
     .gender-box {
-        flex: 1;
+        flex: 1 1 30%;
+        /* shrink, grow, base width */
+        min-width: 100px;
+        /* enough space for text */
         display: flex;
         justify-content: center;
-        min-width: 45%;
     }
 
     /* Full width inputs */
@@ -288,19 +305,24 @@
         margin: 2vw 0 !important;
     }
 
-    .signup-btn, .login-link {
+    .signup-btn,
+    .login-link {
         width: 100%;
         text-align: center;
         font-size: 1rem;
     }
 
-    .info-text, .terms-text, .terms-text2 {
+    .info-text,
+    .terms-text,
+    .terms-text2 {
         font-size: 0.7rem;
         text-align: center;
         line-height: 1.2;
     }
 
-    .rR, .rR1, .rR2 {
+    .rR,
+    .rR1,
+    .rR2 {
         font-size: 0.7rem;
         text-align: center;
     }
