@@ -102,80 +102,87 @@
     margin: 5px;
 }
 /* Mobile */
+/* Mobile */
 @media (max-width: 480px) {
-  /* Reduce overall wrapper size */
   .inputwrapper {
     min-height: auto;
-    padding: 5px;
-    gap: 0.8rem;
+    padding: 10px;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Keep both grids same width */
-  .grid1,
+  /* Center proto-nonex heading */
+  .grid0 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* Center "Create a new account" block */
+  .grid1 {
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  /* Form container full width */
   .grid2 {
     width: 100%;
     max-width: 340px;
   }
 
-  /* Headings in grid1 */
-  .grid1 h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.2rem;
-  }
-  .grid1 p {
-    font-size: 0.8rem;
-    padding-top: 0.15rem;
-  }
-
-  /* Form labels */
-  .grid2 > div[style*="color: #1976d2"] {
-    margin-right: 0;
-    margin-bottom: 2px;
-    font-size: 9px;
-  }
-
   /* Name row */
   .grid2 > .MuiTextField-root:nth-of-type(1),
   .grid2 > .MuiTextField-root:nth-of-type(2) {
-    width: calc(50% - 4px);
+    width: calc(50% - 6px);
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 8px;
   }
 
-  /* Date of Birth row */
+  /* DOB row */
   .grid2 > div[style*="display: flex"] {
-    flex-wrap: wrap; /* allow wrapping if needed */
+    flex-wrap: nowrap;
+    justify-content: space-between;
     gap: 6px;
     margin-top: 8px;
   }
-  .grid2 .MuiFormControl-root,
-  .grid2 input[type="number"] {
-    flex: 1 1 calc(25% - 6px); /* responsive sizing */
-    min-width: 70px; /* avoid too small */
+  .grid2 .MuiFormControl-root {
+    flex: 1;
+    min-width: 0;
+  }
+  .grid2 .MuiTextField-root {
+    flex: 1;
   }
 
-  /* Gender row */
+  /* Age row separate */
+  .grid2 input[name="age"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Gender */
   .grid2 .MuiRadioGroup-root {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 6px;
   }
   .grid2 .MuiRadioGroup-root .MuiBox-root {
-    flex: 1 1 calc(33% - 6px);
-    min-width: 90px;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
   }
   .grid2 .MuiRadioGroup-root .MuiBox-root > div {
     width: 100%;
+    justify-content: center;
   }
 
-  /* Compact spacing inside form */
-  .grid2 .MuiTextField-root,
-  .grid2 .MuiFormControl-root {
-    margin-bottom: 8px;
+  /* Ensure all inputs have same height */
+  .MuiOutlinedInput-root {
+    height: 40px;
   }
 }
-
 
