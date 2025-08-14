@@ -1,3 +1,103 @@
-.e{
-    color: blue;
+*{  
+    box-sizing: border-box;
+}
+.backgroundimageR {
+  position: relative;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden; /* Prevents pseudo-element overflow */
+}
+
+/* Blurred background layer */
+.backgroundimageR::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Uses same background as parent */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust blur strength */
+  z-index: 0; /* Stay behind content */
+}
+
+/* Make sure content stays above blur */
+.backgroundimageR > * {
+  position: relative;
+  z-index: 1;
+}
+.inputwrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;             
+    width: 100%;
+    max-width: 1400px;           
+    margin: 0 auto;             
+    padding:10px;
+    /* background: linear-gradient(to right, aqua, transparent); */
+    /* background-color: rgba(146, 248, 239, 0.436); */
+}
+.imgR{
+    width : 35%;
+    max-width: 600px;
+    margin-right: 180%;
+    justify-self: center;
+}
+
+.grid-container{
+    display: grid;
+    padding: 10px;
+    align-self: start;
+    justify-self: start;
+
+}
+.grid0{  
+    padding: 10px;
+    margin-top: -25%;
+    text-align: center;
+    justify-self: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.grid1{  
+    margin-top: -5%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.151);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+}
+.grid2{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+}
+.rR{
+    font-size: 9px;
+    margin: 3px;
+}
+.rR1{
+    font-size: 9px;
+    margin: 5px;
+    text-decoration: none;
+}
+.rR2{
+    font-size: 9px;
+    margin: 5px;
 }
