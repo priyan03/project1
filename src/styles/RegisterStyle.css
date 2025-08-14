@@ -205,98 +205,103 @@
 
 /* MOBILE STYLES */
 @media screen and (max-width: 600px) {
-
     .inputwrapper {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding: 10px;
+        padding: 5vw;
     }
 
     .imgR {
-        width: 50%;
-        max-width: 200px;
-        margin: 0 auto 20px auto;
+        width: 70%;
+        max-width: 150px;
+        margin: 0 auto 5vw auto;
     }
 
     .grid0 {
-        font-size: 2rem;
-        margin-top: -10%;
+        font-size: 1.5rem;
+        margin-top: 2vw;
         text-align: center;
+        line-height: 1.2;
     }
 
     .grid1, .grid2 {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 3vw;
+        box-sizing: border-box;
     }
 
     .subheading {
-        font-size: 0.9rem;
-        padding-top: 5px;
+        font-size: 1rem;
+        padding-top: 1vw;
     }
 
     .label-small, .label-small2, .label-small3 {
-        font-size: 9px;
+        font-size: 0.7rem;
     }
 
-    /* FIRSTNAME, SURNAME & AGE IN ONE ROW */
+    /* FIRSTNAME, SURNAME & AGE */
     .name-age-row {
         display: flex;
-        gap: 5px;
+        flex-wrap: wrap;
+        gap: 2vw;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 3vw;
     }
     .name-age-row .MuiTextField-root {
-        flex: 1; /* Each takes equal width */
+        flex: 1;
+        min-width: 45%;
     }
 
-    /* DOB: DAY, MONTH, YEAR in one row */
+    /* DOB: DAY, MONTH, YEAR */
     .dob-row {
         display: flex;
-        gap: 5px;
+        flex-wrap: wrap;
+        gap: 2vw;
         width: 100%;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 3vw 0;
     }
     .dob-row .MuiFormControl-root,
     .dob-row .MuiTextField-root {
-        flex: 1; /* All equal width */
+        flex: 1;
+        min-width: 30%;
     }
 
-    /* GENDER IN ONE ROW */
+    /* GENDER */
     .gender-options {
         display: flex !important;
-        gap: 5px;
+        gap: 2vw;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .gender-box {
-        flex: 1; /* Each gender option takes equal width */
+        flex: 1;
         display: flex;
         justify-content: center;
+        min-width: 45%;
     }
 
-    /* Full width text fields (mobile friendly) */
+    /* Full width inputs */
     .full-width {
         width: 100% !important;
-        margin: 5px 0 !important;
+        margin: 2vw 0 !important;
     }
 
     .signup-btn, .login-link {
         width: 100%;
         text-align: center;
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .info-text, .terms-text, .terms-text2 {
-        font-size: 8px;
+        font-size: 0.7rem;
         text-align: center;
+        line-height: 1.2;
     }
 
     .rR, .rR1, .rR2 {
-        font-size: 8px;
+        font-size: 0.7rem;
         text-align: center;
     }
 }
