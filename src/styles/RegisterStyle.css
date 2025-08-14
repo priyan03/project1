@@ -131,13 +131,13 @@
   /* Title */
   .grid0 {
     font-size: 2rem;
-    margin-top: 0;
+    margin-top: -10px;
     text-align: center;
   }
 
   /* Header box */
   .grid1 {
-    width: 50%;
+    width: 100%;
     font-size: 0.9rem;
     padding: 10px;
     box-sizing: border-box;
@@ -145,7 +145,7 @@
 
   /* Form box */
   .grid2 {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
   }
