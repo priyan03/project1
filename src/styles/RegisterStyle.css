@@ -111,20 +111,17 @@
     justify-content: flex-start;
     padding: 20px 15px 50px;
     gap: 15px;
-    width: 10%;
+    max-width: 95%;
     margin: 0 auto;
   }
 
-  /* Logo */
+  /* Hide logo completely on mobile */
   .imgR {
-    width: 10%;
-    max-width: 350px;
-    padding: 1.5rem;
+    display: none;
   }
 
   /* Title */
   .grid0 {
-    order: 2; /* Always second */
     font-size: 1.8rem;
     text-align: center;
     margin-top: 10px;
@@ -134,13 +131,13 @@
   /* Box elements */
   .grid1,
   .grid2 {
-    order: 3; /* Always last */
-    width: 10%;
+    width: 94%;
     padding: 1.5rem;
     font-size: 0.9rem;
     margin-top: 0;
   }
 
+  /* Small text */
   .rR,
   .rR1,
   .rR2 {
