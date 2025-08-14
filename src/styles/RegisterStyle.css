@@ -102,56 +102,59 @@
     margin: 5px;
 }
 /* Mobile */
-@media (max-width: 768px) {
-  /* Form container */
+@media (max-width: 480px) {
+  /* Container */
   .grid2 {
-    width: 90%;
-    padding: 10px;
+    width: 100%;
+    padding: 8px;
     box-sizing: border-box;
-    margin: 0 auto;
   }
 
-  /* Label text above inputs */
-  .grid2 > div[style*="color: #1976d2"] {
-    margin-right: 0;
-    text-align: left;
-    margin-bottom: 4px;
+  /* First & last name in one row */
+  .grid2 .MuiTextField-root[name="firstname"],
+  .grid2 .MuiTextField-root[name="surname"] {
+    width: calc(50% - 6px);
   }
 
-  /* Name fields */
-  .grid2 .MuiTextField-root {
-    width: 100%;
-    margin: 5px 0;
+  /* Name row spacing */
+  .grid2 .MuiTextField-root[name="firstname"] {
+    margin-right: 6px;
+  }
+  .grid2 .MuiTextField-root[name="surname"] {
+    margin-left: 6px;
   }
 
-  /* Date of Birth row -> stack vertically */
+  /* DOB row in one line with smaller fields */
   .grid2 > div[style*="display: flex"] {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 6px;
   }
-
-  /* Select dropdowns in DOB row */
   .grid2 .MuiFormControl-root {
-    width: 100%;
-    margin: 0;
+    min-width: 60px;
+    width: 25%;
   }
-
-  /* Age field */
   .grid2 input[type="number"] {
-    width: 100%;
+    width: 25%;
   }
 
-  /* Gender row stacked */
+  /* Gender row compact in one line */
   .grid2 .MuiRadioGroup-root {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .grid2 .MuiRadioGroup-root > .MuiBox-root {
-    flex-direction: column;
-    gap: 10px;
+  .grid2 .MuiRadioGroup-root .MuiBox-root {
+    gap: 6px;
   }
   .grid2 .MuiRadioGroup-root .MuiBox-root > div {
-    width: 100%;
+    width: auto;
+    padding: 2px 4px;
+  }
+
+  /* Labels closer to inputs */
+  .grid2 > div[style*="color: #1976d2"] {
+    margin-bottom: 2px;
+    font-size: 9px;
   }
 }
 
