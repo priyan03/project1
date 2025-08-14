@@ -225,65 +225,50 @@
         margin: 0 auto 5vw auto;
     }
 
+    /* Heading */
     .grid0 {
-        font-size: 1.5rem;
-        margin-top: 2vw;
+        font-size: 2rem;
+        /* slightly bigger */
         text-align: center;
-        line-height: 1.2;
+        margin-top: 2vw;
+        font-weight: bold;
     }
 
-    .grid1,
-    .grid2 {
-        width: 100%;
-        margin: 0 auto;
-        padding: 3vw;
-        box-sizing: border-box;
-    }
-
-    .subheading {
-        font-size: 1rem;
-        padding-top: 1vw;
-    }
-
-    .label-small,
-    .label-small2,
-    .label-small3 {
-        font-size: 0.7rem;
-    }
-
-    /* FIRSTNAME + SURNAME */
+    /* Firstname + Surname stacked full width like Mobile Number */
     .name-row {
         display: flex;
-        flex-wrap: nowrap;
-        gap: 2vw;
+        flex-direction: column;
+        /* stack vertically */
+        gap: 10px;
+        width: 100%;
     }
 
     .name-row .MuiTextField-root {
-        flex: 1 1 0;
-        min-width: 0;
+        width: 100% !important;
     }
 
-    /* DATE OF BIRTH + AGE */
+    /* Date of Birth + Age in one row evenly */
     .dob-row {
         display: flex;
+        gap: 5px;
+        width: 100%;
         flex-wrap: wrap;
-        gap: 2vw;
-        margin: 3vw 0;
     }
 
     .dob-row .MuiFormControl-root,
     .dob-row .MuiTextField-root {
         flex: 1 1 22%;
-        min-width: 70px;
+        min-width: 0;
         box-sizing: border-box;
     }
 
-    /* GENDER */
+    /* Gender options full width */
     .gender-options {
-        display: flex !important;
-        gap: 2vw;
-        justify-content: center;
+        display: flex;
+        gap: 5px;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .gender-box {
@@ -292,6 +277,7 @@
         display: flex;
         justify-content: center;
     }
+
 
     /* Full width inputs */
     .full-width {
