@@ -10,6 +10,11 @@ const Register = () => {
             style={{ backgroundImage: `url(${bgGif})` }}>
             <div className='containe'>
                 <div className='headingR'>Protonoun<span className='blue'>X</span></div>
+                <div className='boxR'>
+                    <div className='head1'>Create a new account</div>
+                    <div className='head2'>It's Rapid and Simple!!</div>
+                    <hr className="line" />
+                </div>
             </div>
         </div>
     )
