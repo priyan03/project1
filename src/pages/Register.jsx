@@ -9,7 +9,7 @@ const Register = () => {
             className='backgroundimageR'
             style={{ backgroundImage: `url(${bgGif})` }}>
             <div className='containe'>
-                <div>hi</div>
+                <div className='headingR'>Protonoun<span className='blue'>X</span></div>
             </div>
         </div>
     )
