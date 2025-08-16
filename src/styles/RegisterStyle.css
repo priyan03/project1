@@ -94,7 +94,6 @@
 .name .MuiInputBase-root{
   width: 195px;
   margin: 5px;
-  height: 35px;
   text-align: center;
 }
 
@@ -131,8 +130,7 @@
     margin: 10px -15px;
   }
   .name .MuiInputBase-root {
-    width: 170px;    
-    height: 30px;    
+    width: 150px;        
     margin: 3px; 
   }
 }
