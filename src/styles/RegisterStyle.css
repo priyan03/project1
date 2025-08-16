@@ -96,7 +96,7 @@
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
   .container {
-    /* width: 95%; */
+    width: 95%;
     padding: 15px;
     gap: 1rem;
   }
@@ -107,10 +107,18 @@
   }
 
   .boxR {
-    width: 95%;           
-    max-width: 500px;   
-    padding: 20px;
-    margin: 0 auto;      
+    border-radius: 10px;
+    width: clamp(330px, 80%, 250px);
+    margin-top: 20px;
+    background-color: white;
+    position: relative;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.4);
   }
 
   .head1 {
@@ -123,6 +131,6 @@
 
   .line {
     width: calc(100% - 20px);
-    margin: 10px auto;   
+    margin: 10px auto;
   }
 }
