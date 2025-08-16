@@ -14,6 +14,8 @@ const Register = () => {
                     <div className='head1'>Create a new account</div>
                     <div className='head2'>It's Rapid and Simple!!</div>
                     <hr className="line" />
+                    <TextField className='name' label='First name' size='small'/>
+                    <TextField className='name' label='Surname' size='small'/>
                 </div>
             </div>
         </div>
