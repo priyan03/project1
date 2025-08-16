@@ -112,45 +112,13 @@
   width: 124.6px;
   margin: 6px;
 }
-
-.gender-box {
-  display: inline-block;
-  border: 1px solid #2b2b2b6b;
+.genderR{
+  border: 1px solid rgba(58, 57, 57, 0.388);
   border-radius: 4px;
-  padding: 10px 20px;
-  margin: 5px;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.gender-box input[type="radio"] {
-  margin-right: 8px;
-}
-
-.mobR, .passRR {
-  display: flex;
-  justify-content: center; 
-}
-.mobR .MuiInputBase-root {
   width: 400px;
-  margin: 10px auto;
+  justify-content: center;
 }
 
-.passRR .MuiInputBase-root {
-  width: 400px;
-  margin: 5px auto;
-}
-
-.mobR label{
-  text-align: left;
-  width: 100%;
-  padding-top: 10px;
-}
-.passRR label{
-  text-align: left;
-  width: 100%;
-  padding-top: 5px;
-}
 
 
 /* Mobile adjustments */
@@ -201,27 +169,7 @@
     width: 95.6px;
     margin: 4px;
   }
-
-  .gender-box {
-    display: block;
-    padding: 12px;
-    margin: 8px 0;
-    font-size: 16px;
-  }
-
-  .gender-box input[type="radio"] {
-    margin-right: 10px;
-    transform: scale(1.2);
-  }
-   .mobR .MuiInputBase-root,
-  .passRR .MuiInputBase-root {
-    width: 350px;       
-    margin: 8px auto; 
-  }
-
-  .mobR label,
-  .passRR label {
-    font-size: 14px;  
-    padding-top: 6px; 
+  .genderR{
+    width: 300px;
   }
 }
