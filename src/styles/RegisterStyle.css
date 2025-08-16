@@ -33,7 +33,7 @@
   background: inherit;
   background-size: cover;
   background-position: center;
-  filter: blur(8px);
+  filter: blur(4px);
   z-index: 0;
 }
 
@@ -96,7 +96,8 @@
   width: 195px;
   margin: 5px;
 }
-.name label{
+
+.name label {
   text-align: left;
   width: 100%;
   padding-top: 5px;
@@ -112,7 +113,8 @@
   width: 124.6px;
   margin: 6px;
 }
-.genderR{
+
+.genderR {
   border: 1px solid rgba(58, 57, 57, 0.265);
   border-radius: 4px;
   width: 400px;
@@ -121,7 +123,8 @@
   margin: 5px;
 }
 
-.mobRR , .passRR{
+.mobRR,
+.passRR {
   display: flex;
   justify-content: center;
 }
@@ -131,19 +134,35 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.mobRR label{
+
+.mobRR label {
   margin-top: 10px;
 }
-.passRR .MuiInputBase-root{
+
+.passRR .MuiInputBase-root {
   width: 400px;
-  margin-top: 5px ;
-}
-.passRR label{
-  margin-top: 5px; 
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
+.passRR label {
+  margin-top: 5px;
+}
 
-
+.wordsR {
+  font-size: 10px;
+  width: 380px;
+  margin-left: 14px;
+}
+.wordsR1 {
+  font-size: 10px;
+  width: 380px;
+  margin-left: 14px;
+  margin-top: 15px;
+}
+.signUp{
+  width:400px
+}
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
@@ -155,7 +174,8 @@
 
   .headingR {
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .boxR {
@@ -193,14 +213,32 @@
     width: 95.6px;
     margin: 4px;
   }
-  .genderR{
+
+  .genderR {
     width: 305px;
     gap: 10px;
   }
 
   .mobRR .MuiInputBase-root,
   .passRR .MuiInputBase-root {
-    width: 305px;      
-    margin: 8px 0;  
+    width: 305px;
+    margin: 8px 0;
+  }
+
+  .wordsR {
+    font-size: 9px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;/
+  }
+  .wordsR1 {
+    font-size: 9px;         
+    width: 90%;            
+    margin-left: auto;      
+    margin-right: auto;     
+    margin-top: 10px;       
+  }
+  .signUp{
+    width: 305;
   }
 }
