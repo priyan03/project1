@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/RegisterStyle.css";
-import { TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { TextField, FormControl, InputLabel, Select } from '@mui/material';
 import bgGif from "../bgGif/bg.gif";
 
 const Register = () => {
@@ -16,7 +16,7 @@ const Register = () => {
                     <hr className="line" />
                     <TextField className='name' label='First name' size='small' />
                     <TextField className='name' label='Surname' size='small' />
-                    <div className='dob'>birth of date</div>
+                    <div className='dRR'>birth of date</div>
                     {/* Day */}
                     <FormControl className='day'>
                         <InputLabel>Day</InputLabel>
@@ -59,8 +59,25 @@ const Register = () => {
                             ))}
                         </Select>
                     </FormControl>
+                    {/* Gender */}
+                    <div className='dRR'>Gender</div>
+                    <div>
+                        <label class="gender-box">
+                            <input type="radio" name="gender" value="male" />
+                            Female
+                        </label>
+                        <label class="gender-box">
+                            <input type="radio" name="gender" value="female" />
+                            Male
+                        </label>
 
-
+                        <label class="gender-box">
+                            <input type="radio" name="gender" value="custom" />
+                            Custom
+                        </label>
+                        <div><TextField className='mobR' size='small' label="Mobile number or email address"/></div>
+                        <div><TextField className='passRR' size='small' label="New Password"/></div>
+                    </div>
                 </div>
             </div>
         </div>
