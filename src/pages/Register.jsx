@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import "../styles/RegisterStyle.css";
 import {
     TextField, FormControl, InputLabel, Select,
-    Radio, RadioGroup, FormControlLabel, FormLabel
+    Radio, RadioGroup, FormControlLabel, Button
 } from '@mui/material';
 import bgGif from "../bgGif/bg.gif";
+import {Link ,useNavigate } from 'react-router-dom';
 
 const Register = () => {
     return (
@@ -80,6 +81,17 @@ const Register = () => {
                     </div>
                     <div><TextField className='mobRR' size='small' label='Mobile number or email address'/></div>
                     <div><TextField className='passRR' size='small' label='New Password'/></div>
+                    <div className='wordsR'>Your contact information might have been uploaded to 
+                        <span style={{fontWeight:"bold"}}> Protonoun<span className='blue'>X</span></span> by people who use our service.
+                        <Link style={{textDecoration:"none", color:"#1976d2"}}>  Learn more</Link>
+                    </div>
+                    <div className='wordsR1'>By clicking Sign Up, you agree to our 
+                        <Link style={{textDecoration:"none", color:"#1976d2"}}> Terms</Link>, 
+                        <Link style={{textDecoration:"none", color:"#1976d2"}}> Privacy Policy</Link> and 
+                        <Link style={{textDecoration:"none", color:"#1976d2"}}> Cookies Policy</Link>. 
+                        <p>You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+                    <div><Button className='signUp' variant="contained" size='small' style={{marginTop:15, width:'400px'}}>Sign Up</Button></div>
                 </div>
             </div>
         </div>
