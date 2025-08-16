@@ -91,19 +91,67 @@
   width: calc(100% + 40px);
   margin: 10px -20px;
 }
-.name .MuiInputBase-root{
+
+.name .MuiInputBase-root {
   width: 195px;
   margin: 5px;
 }
-.dob{
+.name label{
+  text-align: left;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.dRR {
   font-size: xx-small;
   margin: 5px;
   color: #1976d2
 }
-.day .MuiInputBase-root{
+
+.day .MuiInputBase-root {
   width: 124.6px;
   margin: 6px;
 }
+
+.gender-box {
+  display: inline-block;
+  border: 1px solid #2b2b2b6b;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.gender-box input[type="radio"] {
+  margin-right: 8px;
+}
+
+.mobR, .passRR {
+  display: flex;
+  justify-content: center; 
+}
+.mobR .MuiInputBase-root {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.passRR .MuiInputBase-root {
+  width: 400px;
+  margin: 5px auto;
+}
+
+.mobR label{
+  text-align: left;
+  width: 100%;
+  padding-top: 10px;
+}
+.passRR label{
+  text-align: left;
+  width: 100%;
+  padding-top: 5px;
+}
+
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
@@ -119,9 +167,9 @@
   }
 
   .boxR {
-    width: 350px;          
-    padding: 15px;      
-    margin: 10px auto; 
+    width: 350px;
+    padding: 15px;
+    margin: 10px auto;
 
   }
 
@@ -137,17 +185,34 @@
     width: calc(100% + 30px);
     margin: 10px -15px;
   }
+
   .name .MuiInputBase-root {
-    width: 150px;        
-    margin: 3px; 
+    width: 150px;
+    margin: 3px;
   }
-  .dob {
-    font-size: 10px;     
-    margin: 5px;      
-    text-align: center;  
+
+  .dRR {
+    font-size: 10px;
+    margin: 5px;
+    text-align: center;
   }
-   .day .MuiInputBase-root {
-    width: 95.6px;    
-    margin: 4px;    
+
+  .day .MuiInputBase-root {
+    width: 95.6px;
+    margin: 4px;
   }
+
+  .gender-box {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .gender-box input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+
 }
