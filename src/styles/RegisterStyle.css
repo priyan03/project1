@@ -74,7 +74,7 @@
 }
 
 .head1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -94,7 +94,15 @@
 .name .MuiInputBase-root{
   width: 195px;
   margin: 5px;
-  text-align: center;
+}
+.dob{
+  font-size: xx-small;
+  margin: 5px;
+  color: #1976d2
+}
+.day .MuiInputBase-root{
+  width: 124.6px;
+  margin: 6px;
 }
 
 /* Mobile adjustments */
@@ -132,5 +140,14 @@
   .name .MuiInputBase-root {
     width: 150px;        
     margin: 3px; 
+  }
+  .dob {
+    font-size: 12px;     
+    margin: 5px;      
+    text-align: center;  
+  }
+   .day .MuiInputBase-root {
+    width: 100px;    
+    margin: 4px;    
   }
 }
