@@ -20,45 +20,42 @@ const Register = () => {
                     {/* Day */}
                     <FormControl className='day'>
                         <InputLabel>Day</InputLabel>
-                        <Select label="Day" size='small' defaultValue="">
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
+                        <Select native label="Day" size='small' defaultValue="">
+                            <option value="">
+                            </option>
                             {Array.from({ length: 31 }, (_, i) => (
-                                <MenuItem key={i + 1} value={i + 1}>
+                                <option key={i + 1} value={i + 1}>
                                     {i + 1}
-                                </MenuItem>
+                                </option>
                             ))}
                         </Select>
                         {/* month */}
                     </FormControl>
                     <FormControl className='day'>
                         <InputLabel>Month</InputLabel>
-                        <Select label="Month" size='small' defaultValue="">
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
+                        <Select native label="Month" size='small' defaultValue="">
+                            <option value="">
+                            </option>
                             {[
                                 "January", "February", "March", "April", "May", "June",
                                 "July", "August", "September", "October", "November", "December"
                             ].map((month, i) => (
-                                <MenuItem key={i + 1} value={i + 1}>
+                                <option key={i + 1} value={i + 1}>
                                     {month}
-                                </MenuItem>
+                                </option>
                             ))}
                         </Select>
                     </FormControl>
                     {/* Year */}
                     <FormControl className='day'>
                         <InputLabel>Year</InputLabel>
-                        <Select label="Year" size='small' defaultValue="">
-                            <MenuItem value="">
-                                <em>None</em>
-                            </MenuItem>
+                        <Select native label="Year" size='small' defaultValue="">
+                            <option value="">
+                            </option>
                             {Array.from({ length: 126 }, (_, i) => 1900 + i).map((year) => (
-                                <MenuItem key={year} value={year}>
+                                <option key={year} value={year}>
                                     {year}
-                                </MenuItem>
+                                </option>
                             ))}
                         </Select>
                     </FormControl>
