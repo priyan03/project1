@@ -91,7 +91,7 @@ const Register = () => {
                         <Link style={{textDecoration:"none", color:"#1976d2"}}> Cookies Policy</Link>. 
                         You may receive SMS notifications from us at any time.
                     </div>
-                    <div><Button className='signUp' variant="contained" size='small' style={{marginTop:15, width:'400px'}}>Sign Up</Button></div>
+                    <div><Button className='signUp' variant="contained" size='small' style={{marginTop:15}}>Sign Up</Button></div>
                 </div>
             </div>
         </div>
