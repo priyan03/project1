@@ -89,7 +89,7 @@ const Register = () => {
                         <Link style={{textDecoration:"none", color:"#1976d2"}}> Terms</Link>, 
                         <Link style={{textDecoration:"none", color:"#1976d2"}}> Privacy Policy</Link> and 
                         <Link style={{textDecoration:"none", color:"#1976d2"}}> Cookies Policy</Link>. 
-                        <p>You may receive SMS notifications from us and can opt out at any time.</p>
+                        You may receive SMS notifications from us at any time.
                     </div>
                     <div><Button className='signUp' variant="contained" size='small' style={{marginTop:15, width:'400px'}}>Sign Up</Button></div>
                 </div>
