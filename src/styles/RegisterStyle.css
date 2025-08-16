@@ -107,7 +107,7 @@
   }
 
   .boxR {
-    width: 130%;
+    width: 100%;
     padding: 15px;
   }
 
@@ -120,7 +120,7 @@
   }
 
   .line {
-    width: calc(130% + 30px);
+    width: calc(100% + 30px);
     margin: 10px -15px;
   }
 }
