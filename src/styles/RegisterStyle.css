@@ -117,6 +117,7 @@
   border-radius: 4px;
   width: 400px;
   justify-content: center;
+  gap: 30px;
 }
 
 
@@ -170,6 +171,6 @@
     margin: 4px;
   }
   .genderR{
-    width: 310px;
+    width: 305px;
   }
 }
