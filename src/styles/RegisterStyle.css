@@ -204,7 +204,6 @@
 
   .gender-box {
     display: block;
-    width: 100%;
     padding: 12px;
     margin: 8px 0;
     font-size: 16px;
@@ -214,5 +213,15 @@
     margin-right: 10px;
     transform: scale(1.2);
   }
+   .mobR .MuiInputBase-root,
+  .passRR .MuiInputBase-root {
+    width: 350px;       
+    margin: 8px auto; 
+  }
 
+  .mobR label,
+  .passRR label {
+    font-size: 14px;  
+    padding-top: 6px; 
+  }
 }
