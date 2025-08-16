@@ -91,7 +91,12 @@
   width: calc(100% + 40px);
   margin: 10px -20px;
 }
-
+.name .MuiInputBase-root{
+  width: 195px;
+  margin: 5px;
+  height: 35px;
+  text-align: center;
+}
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
@@ -124,5 +129,10 @@
   .line {
     width: calc(100% + 30px);
     margin: 10px -15px;
+  }
+  .name .MuiInputBase-root {
+    width: 170px;    
+    height: 30px;    
+    margin: 3px; 
   }
 }
