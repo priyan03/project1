@@ -78,6 +78,8 @@ const Register = () => {
                             </RadioGroup>
                         </FormControl>
                     </div>
+                    <div><TextField className='mobRR' size='small' label='Mobile number or email address'/></div>
+                    <div><TextField className='passRR' size='small' label='New Password'/></div>
                 </div>
             </div>
         </div>
