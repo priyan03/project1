@@ -107,18 +107,10 @@
   }
 
   .boxR {
-    border-radius: 10px;
-    width: clamp(360px, 80%, 250px);
-    margin-top: 20px;
-    background-color: white;
+    width: 90%;
+    padding: 15px;
     position: relative;
-    padding: clamp(1rem, 2vw, 1rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    z-index: 1;
-    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.4);
+
   }
 
   .head1 {
@@ -130,7 +122,8 @@
   }
 
   .line {
-    width: calc(100% - 20px);
-    margin: 10px auto;
+    width: calc(100% + 30px);
+    margin: 10px -15px;
+    display: block;
   }
 }
