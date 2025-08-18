@@ -1,6 +1,7 @@
-*{  
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
+
 .backgroundimage {
   position: relative;
   min-height: 100vh;
@@ -9,7 +10,8 @@
   background-attachment: scroll;
   background-size: cover;
   width: 100%;
-  overflow: hidden; /* Prevents pseudo-element overflow */
+  overflow: hidden;
+  /* Prevents pseudo-element overflow */
 }
 
 /* Blurred background layer */
@@ -20,35 +22,39 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: inherit; /* Uses same background as parent */
+  background: inherit;
+  /* Uses same background as parent */
   background-size: cover;
   background-position: center;
-  filter: blur(4px); /* Adjust blur strength */
-  z-index: 0; /* Stay behind content */
+  filter: blur(4px);
+  /* Adjust blur strength */
+  z-index: 0;
+  /* Stay behind content */
 }
 
 /* Make sure content stays above blur */
-.backgroundimage > * {
+.backgroundimage>* {
   position: relative;
   z-index: 1;
 }
 
-.img{
-    width: clamp(500px, 80%, 400px);
-    margin-left: 4%;
-    justify-self: center;
+.img {
+  width: clamp(500px, 80%, 400px);
+  margin-left: 4%;
+  justify-self: center;
 
 }
-.input-wrapper{  
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;             
-    width: 100%;
-    max-width: 1200px;           
-    margin: 0 auto;             
-    padding:10px;
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 
@@ -60,50 +66,62 @@
   background: transparent;
   position: relative;
   border-radius: 8px;
-  z-index: 1; /* Keep text above border */
-  padding: 8px 16px; /* Space so border doesn't touch text */
+  z-index: 1;
+  /* Keep text above border */
+  padding: 8px 16px;
+  /* Space so border doesn't touch text */
 }
 
 /* Shiny animated border */
 .heading-text::after {
   content: "";
   position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   border-radius: inherit;
-  padding: 4px; /* Border thickness */
+  padding: 4px;
+  /* Border thickness */
 
-  background: linear-gradient(
-    270deg,
-    rgba(249, 193, 237, 0.6),
-    rgba(139, 187, 249, 0.6),
-    rgba(192, 236, 205, 0.6),
-    rgba(135, 206, 250, 0.6)
-  ) border-box;
-  
+  background: linear-gradient(270deg,
+      rgba(249, 193, 237, 0.6),
+      rgba(139, 187, 249, 0.6),
+      rgba(192, 236, 205, 0.6),
+      rgba(135, 206, 250, 0.6)) border-box;
+
   background-size: 400% 400%;
   animation: shine-border 5s linear infinite;
 
-  border: 4px solid transparent; /* Needed for border-box trick */
-  pointer-events: none; /* Make sure it doesn’t block clicks */
-  z-index: -1; /* Put behind the text */
+  border: 4px solid transparent;
+  /* Needed for border-box trick */
+  pointer-events: none;
+  /* Make sure it doesn’t block clicks */
+  z-index: -1;
+  /* Put behind the text */
 }
 
 @keyframes shine-border {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
 
-.border{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    min-width: 300px;
+.border {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-width: 300px;
 }
 
 /* BOX */
@@ -120,7 +138,7 @@
   align-items: center;
   gap: 10px;
   z-index: 1;
-  box-shadow: 0 4px 8px rgba(0.2,0.2,0.2,0.4);  
+  box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.4);
 }
 
 /* Animated shining border */
@@ -146,7 +164,7 @@
 .box::after {
   content: "";
   position: absolute;
-  inset: 2px; 
+  inset: 2px;
   border-radius: 8px;
   z-index: -1;
 }
@@ -155,38 +173,43 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-} */ */
-
-
+} */
+*/
 /* BOX */
 
-.bt{
-    margin-top: 6px;
+.bt {
+  margin-top: 6px;
 }
-.si{
-    margin-top: 1%;
-    margin-bottom: 30px;
+
+.si {
+  margin-top: 1%;
+  margin-bottom: 30px;
 }
+
 .singin {
   display: flex;
-  justify-content: center;  
-  align-items: center;       
-  margin-top: 20px;   
-}   
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 /* new */
-.emailL .MuiInputBase-root{
+.emailL .MuiInputBase-root {
   margin-bottom: 20px;
 }
-.passL .MuiInputBase-root{
+
+.passL .MuiInputBase-root {
   margin-bottom: 5px;
 }
+
 .remL {
-  font-size: 14px !important; 
-  margin-left: -7px !important;                   
-}
-.forgotL{
   font-size: 14px !important;
-  margin-left : 57px !important;
+  margin-left: -7px !important;
+}
+
+.forgotL {
+  font-size: 14px !important;
+  margin-left: 57px !important;
 }
 
 
@@ -209,32 +232,33 @@
   }
 
   /* Keep actual content normal */
-  .backgroundimage > * {
+  .backgroundimage>* {
     position: relative;
     z-index: 1;
     transform: none;
   }
 
-  .heading-text,marquee {
+  .heading-text,
+  marquee {
     display: none;
   }
 
   .input-wrapper {
-    flex-direction: column;       
-    align-items: stretch;          
-    justify-content: flex-start;  
-    padding: 20px 15px 70px;           
-    min-height: auto;          
-    gap: 15px;  
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 20px 15px 70px;
+    min-height: auto;
+    gap: 15px;
   }
 
   .img {
     width: 100%;
     max-width: 350px;
     padding: 1.5rem;
-    gap:0.75rem;
+    gap: 0.75rem;
     margin: 0 auto;
-    margin-top: -10%;
+    margin-top: -5%;
 
   }
 
@@ -248,5 +272,9 @@
   .si {
     font-size: 0.9rem;
     text-align: center;
+  }
+
+  .forgotL {
+    margin-left: 37px !important;
   }
 }
