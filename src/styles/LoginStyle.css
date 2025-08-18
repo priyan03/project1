@@ -151,11 +151,11 @@
   z-index: -1;
 }
 
-@keyframes shine-border {
+/* @keyframes shine-border {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-} */
+} */ */
 
 
 /* BOX */
@@ -166,28 +166,27 @@
 .si{
     margin-top: 1%;
     margin-bottom: 30px;
-    /* font-weight: bold; */
 }
-.icon,.icon2,.icon3,.b,.p {
-    color: #1976d2;  
+.singin {
+  display: flex;
+  justify-content: center;  
+  align-items: center;       
+  margin-top: 20px;   
+}   
+/* new */
+.emailL .MuiInputBase-root{
+  margin-bottom: 20px;
 }
-.email, .pass{
-    width: 90%;
-    margin-bottom: 8px;
+.passL .MuiInputBase-root{
+  margin-bottom: 5px;
 }
-.button-field{
-    margin-bottom: 8px;
-    width: 90%;
-    text-transform: capitalize;
+.remL {
+  font-size: 14px !important; 
+  margin-left: -7px !important;                   
 }
-.a,.a1{
-    text-decoration: none;
-}
-.a1{
-    margin-left: 39.4%;
-}
-.span{
-    margin-left: -9%;
+.forgotL{
+  font-size: 14px !important;
+  margin-left : 57px !important;
 }
 
 
@@ -249,19 +248,5 @@
   .si {
     font-size: 0.9rem;
     text-align: center;
-  }
-
-  .a1 {
-    text-align: right;
-    text-decoration: none;
-    margin-left: 41.9%;
-  }
-
-  .span {
-    margin-left: -8%;
-  }
-
-  .email, .pass {
-    width: 100%;
   }
 }
