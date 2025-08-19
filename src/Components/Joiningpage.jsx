@@ -1,5 +1,5 @@
 import React from 'react';
-import "../ComponentStyle/joiningpage.css";
+import "../ComponentStyle/Joiningpage.css";
 import Logo from '../Logo-Priyan-webX.png';
 import Work from '../bgGif/Work.png';
 import { Button } from '@mui/material';
