@@ -41,19 +41,6 @@
   z-index: 1;
 }
 
-/* Main container for form elements */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .headingR {
   margin-top: 20px;
   font-size: 55px;

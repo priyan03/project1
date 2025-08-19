@@ -53,12 +53,11 @@ const Login = () => {
             }>
                 <span style={{ color: "hsla(285, 80%, 26%, 1.00)", fontWeight: "bolder" }}>Innovation starts with a click</span><span>&nbsp;- &nbsp;</span>
                 <span style={{ fontSize: "2rem" }}>leading to Verte</span><span className="p" style={{ fontSize: "2.1rem", color: "#1976d2" }}>X</span></div>
-            <marquee style={{ backgroundColor: "#6f00ff49", padding: "2px", color: "black", fontSize: "10px", fontWeight: "bold" }}>
-                ProtonounX is a digital solutions service where a single user interaction
-                — a click — initiates innovative processes. From web application development to
-                interactive user experiences, our service transforms simple actions into powerful outcomes,
-                integrating modern UI/UX design, responsive technology, and scalable architecture to deliver
-                cutting-edge solutions.</marquee>
+            <marquee style={{ backgroundColor: "#6f00ff49", padding: "2px", color: "#000000ff", fontSize: "14px" }}>
+                ProtonounX is a next-generation social media platform where every interaction opens the door to unique experiences.
+                 Unlike traditional platforms, ProtonounX lets you explore new and innovative features designed to connect, 
+                 share, and engage in smarter ways. With modern UI/UX design, responsive performance, 
+                 and scalable architecture, ProtonounX transforms simple clicks into meaningful connections and powerful outcomes.</marquee>
 
             <div className="input-wrapper">
                 <div className="img"><img className="img" src={logo} alt="Logo" title="Priyan webX Logo" /></div>
