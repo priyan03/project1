@@ -151,3 +151,88 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
   color:rgb(255, 0, 119);
 }
+
+
+/* ---------- Mobile Styles ---------- */
+@media (max-width: 768px) {
+
+  /* Navbar wrapper */
+  .input-wrapperJ .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* Top row: Logo + Login/Register */
+  .imgJ {
+    width: 80px;
+    height: auto;
+  }
+
+  .contentJ {
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    justify-content: center;
+  }
+
+  /* Put logo + login/register together */
+  .input-wrapperJ .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-wrapperJ .content > .imgJ,
+  .input-wrapperJ .content > .contentJ {
+    order: 1; /* keep them top */
+  }
+
+  /* Menu (comes below) */
+  .menu-center {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    order: 2; /* below login */
+  }
+
+  /* Headings */
+  .headJ {
+    font-size: 38px;
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .headJ1 {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Image comes next */
+  .imgPNG {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+    order: 3;
+  }
+
+  .imgPNG img {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+
+  /* Text below image */
+  .textJJ {
+    white-space: normal;
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+    order: 4;
+  }
+
+  .textJJ p {
+    margin-bottom: 12px;
+  }
+}
