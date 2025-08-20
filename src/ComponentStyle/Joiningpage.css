@@ -151,68 +151,113 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
   color:rgb(255, 0, 119);
 }
-
-
+#menu-toggle {
+  display: none;
+}
+/* Button style */
+.menu-btn {
+  display: none;
+}
+.menu-centerS{
+  display: none;
+}
 /* ---------- Mobile Styles ---------- */
 @media (max-width: 768px) {
-  /* Logo + Login/Register in the same row */
+
+  /* Navbar wrapper */
   .input-wrapperJ .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 15px;
+    gap: 15px;
+    padding: 10px;
   }
 
+  /* Top row: Logo + Login/Register */
   .imgJ {
-    width: 70px;
+    width: 80px;
     height: auto;
   }
 
   .contentJ {
-    display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 10px;
+    margin: 0;
+    justify-content: center;
   }
 
-  /* Show menu below logo+login/register */
-  .menu-center {
+  /* Put logo + login/register together */
+  .input-wrapperJ .content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .input-wrapperJ .content > .imgJ,
+  .input-wrapperJ .content > .contentJ {
+    order: 1; /* keep them top */
+  }
+
+  /* Menu (comes below) */
+  .menu-center {
+    display: none;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .menu-centerS {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  /* Show menu when checkbox checked */
+  #menu-toggle:checked ~ .menu-center {
+    display: flex;
   }
 
   /* Headings */
   .headJ {
-    font-size: 32px;
-    margin-top: 30px;
+    font-size: 38px;
+    margin-top: 70px;
     text-align: center;
   }
 
   .headJ1 {
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 20px;
   }
 
-  /* Image */
+  /* Image comes next */
   .imgPNG {
+    flex-direction: column;
     width: 95%;
-    margin: 0 auto;
-    text-align: center;
+    margin: 20px auto;
+    order: 3;
   }
 
   .imgPNG img {
     width: 100%;
+    margin-top: 30px;
+    margin-right: 0;
     border-radius: 20px;
   }
 
-  /* Text */
+  /* Text below image */
   .textJJ {
-    font-size: 14px;
+    white-space: normal;
+    font-size: 13px;
+    margin-left: 0;
     text-align: center;
-    margin-top: 15px;
+    order: 4;
+  }
+
+  .textJJ p {
+    margin-bottom: 12px;
   }
 }
