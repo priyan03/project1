@@ -93,13 +93,14 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .imgJ {
   width: 100px;
   height: 80px;
   object-fit: contain;
+  margin-right: 200px;
 }
 
 
@@ -113,17 +114,57 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 200px;
   padding: 10px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column; /* Stack one below the other */
+  align-items: center;    /* Center horizontally */
+  justify-content: center;/* Center vertically */
+  text-align: center;     /* Center text */
 }
 
 .headJ {
   font-size: 70px;
   font-weight: bold;
-  margin-top: 100px;
+  margin-right: 200px;
 }
 
 .headJ1 {
-  margin-top: -30px;
+  font-size: 18px;
+  margin-right: 200px;
+}
+
+/* Sidebar Drawer container */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between buttons */
+  width: 120px; /* adjust sidebar width */
+  background-color: rgb(255, 255, 255);
+}
+
+/* Sidebar links */
+.sidebar-link {
+  display: flex;                /* use flex for alignment */
+  align-items: center;          /* vertical center */
+  justify-content: center;  /* text starts from left (use center if you want centered text) */
+  padding: 10px;           
+  text-decoration: none;
+  color: #007ce1ff;
+  font-size: 15px;              
+  font-weight: bold;
+  border-radius: 8px;           
+  transition: background 0.3s; 
+}
+
+/* Button reset inside drawer */
+.sidebar-menu .MuiButton-root {
+  padding: 10px;
+  justify-content: flex-start; 
+  background-color: rgba(0, 106, 151, 0.308);
 }
 
 .imgPNG {
@@ -151,113 +192,114 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
   color:rgb(255, 0, 119);
 }
-#menu-toggle {
-  display: none;
-}
-/* Button style */
-.menu-btn {
-  display: none;
-}
-.menu-centerS{
-  display: none;
-}
-/* ---------- Mobile Styles ---------- */
+
+/* ================= MOBILE CSS ================= */
 @media (max-width: 768px) {
-
   /* Navbar wrapper */
-  .input-wrapperJ .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
-  }
-
-  /* Top row: Logo + Login/Register */
-  .imgJ {
-    width: 80px;
-    height: auto;
-  }
-
-  .contentJ {
+  .input-wrapperJ {
     flex-direction: row;
-    gap: 10px;
-    margin: 0;
-    justify-content: center;
+    padding: 8px;
   }
 
-  /* Put logo + login/register together */
-  .input-wrapperJ .content {
-    display: flex;
-    flex-direction: column;
+  .content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
   }
 
-  .input-wrapperJ .content > .imgJ,
-  .input-wrapperJ .content > .contentJ {
-    order: 1; /* keep them top */
+  /* Logo */
+  .imgJ {
+    width: 70px;
+    height: 60px;
+    margin-right: 0; /* remove large desktop margin */
   }
 
-  /* Menu (comes below) */
-  .menu-center {
-    display: none;
-  }
-
-  .menu-btn {
-    display: inline-block;
-  }
-
-  .menu-centerS {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    background: #f8f9fa;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  /* Show menu when checkbox checked */
-  #menu-toggle:checked ~ .menu-center {
-    display: flex;
-  }
-
-  /* Headings */
+  /* Hero text */
   .headJ {
-    font-size: 38px;
-    margin-top: 70px;
+    font-size: 36px; /* smaller for mobile */
+    margin-right: 0;
     text-align: center;
   }
 
   .headJ1 {
+    font-size: 14px;
+    margin-right: 0;
     margin-top: 5px;
-    font-size: 18px;
     text-align: center;
   }
 
-  /* Image comes next */
-  .imgPNG {
+  .hero-container {
+    margin: 10px auto;
+  }
+
+  /* Login / Register buttons */
+  .contentJ {
     flex-direction: column;
-    width: 95%;
-    margin: 20px auto;
-    order: 3;
+    gap: 8px;
+    margin: 0;
+  }
+
+  /* Sidebar */
+  .sidebar-menu {
+    width: 200px; /* wider for touch accessibility */
+    gap: 25px;
+    padding: 20px 10px;
+  }
+
+  .sidebar-link {
+    font-size: 18px; /* larger for mobile */
+    padding: 12px;
+  }
+
+  /* Image + text section */
+  .input-wrapperJJ {
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .imgPNG {
+    width: 90%; /* full width */
+    flex-direction: column;
   }
 
   .imgPNG img {
     width: 100%;
-    margin-top: 30px;
-    margin-right: 0;
+    height: auto;
+    margin: 0 auto;
     border-radius: 20px;
   }
 
-  /* Text below image */
   .textJJ {
-    white-space: normal;
-    font-size: 13px;
-    margin-left: 0;
-    text-align: center;
-    order: 4;
+    margin: 15px 0 0 0;
+    font-size: 16px;
+    white-space: normal; /* allow wrapping on mobile */
   }
 
   .textJJ p {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(255, 0, 119);
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .headJ {
+    font-size: 28px;
+  }
+
+  .headJ1 {
+    font-size: 12px;
+  }
+
+  .sidebar-menu {
+    width: 180px;
+  }
+
+  .sidebar-link {
+    font-size: 16px;
   }
 }
